@@ -1,6 +1,6 @@
 body {
 	background-color: #FAFAFA;
-}
+	}
 
 h1 {
 	color: #8B92AD;
@@ -15,14 +15,18 @@ p {
 	padding: 50px;
 	box-shadow: -3px 3px 10px #A7ABBA;
 	}
+
 a:link {  
 	text-decoration: none; 
 	color: #FF5339;
 	}
+
 a:visited {  
 	text-decoration: none; 
 	color: #FF5339;
 	}
+	
 a:hover, a:focus, a:active { 
 	text-decoration: none; 
 	color: #fff;
+	}
