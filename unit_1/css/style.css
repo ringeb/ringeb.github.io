@@ -1,16 +1,18 @@
 body {
-	background-color: grey
+	background-color: #FAFAFA;
 }
 
-h1, {
-	color: #d22;
+h1 {
+	color: #8B92AD;
+	font-family: Georgia;
+}
+
+p {
+	background-color: #444A61;
 	font-family: Arial;
-}
-
-p, {
-	
-	font-family: Georgia, san-serif;
-	background-color: gold;
-	padding: 50px;
+	color: #E1E6FA;
 	text-align: justify;
+	padding: 50px;
+	box-shadow: -3px 3px 10px #A7ABBA;
+	
 }
