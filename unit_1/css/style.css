@@ -1,8 +1,16 @@
 body {
-	background-color: gold
+	background-color: grey
 }
 
-h1, p {
+h1, {
 	color: #d22;
 	font-family: Arial;
+}
+
+p, {
+	
+	font-family: Georgia, san-serif;
+	background-color: gold;
+	padding: 50px;
+	text-align: justify;
 }
