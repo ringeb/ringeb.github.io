@@ -1,18 +1,32 @@
 body {
 	background-color: #FAFAFA;
+	text-align: justify;
+	text-rendering: optimizeLegibility;
+  	font-feature-settings: "kern" 1;
+  	padding: 10px;
+	margin: 10px;
+input[type="RINGEB"]
+	font-family: arial;
+
 	}
 
 h1 {
 	color: #8B92AD;
-	font-family: Georgia;
+	font-family: arial;  
+	font-weight: lighter;
 	}
+
+h2 {color: #8B92AD;
+	font-family: georgia;  
+	font-weight: lighter;
+	 }
 
 p {
 	background-color: #444A61;
 	font-family: Arial;
 	color: #E1E6FA;
-	text-align: justify;
-	padding: 50px;
+	padding: 10px;
+	margin: 10px
 	box-shadow: -3px 3px 10px #A7ABBA;
 	}
 
