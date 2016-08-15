@@ -1,10 +1,10 @@
 body {
 	background-color: #FAFAFA;
 	text-align: justify;
-	text-rendering: optimizeLegibility;
-  	font-feature-settings: "kern" 1;
+  	word-spacing: -.1em;
   	padding: 10px;
 	margin: 10px; 
+	max-width:900px;
 
 	}
 
@@ -17,13 +17,15 @@ h1 {
 h2 {color: #8B92AD;
 	font-family: georgia;  
 	font-weight: lighter;
+	kerning: auto;
 	 }
 
 p {
 	background-color: #444A61;
 	font-family: Arial;
+	text-indent: 1em;
 	color: #E1E6FA;
-	padding: 10px;
+	padding: 30px;
 	margin: 10px
 	box-shadow: -3px 3px 10px #A7ABBA;
 	}
