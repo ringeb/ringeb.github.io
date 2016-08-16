@@ -1,25 +1,32 @@
 body {
-	background-color: #FAFAFA;
-	text-align: justify;
+	width:30%;
+   	padding: 30px
+    margin:1%;
+    height:300px;
+    float:left;
+ 	background-color: #FAFAFA;
+	text-align: left ;
+  	font-weight: lighter;
   	word-spacing: -.1em;
-  	padding: 10px;
-	margin: 10px; 
-	max-width:900px;
-
-
+  
 	}
 
+.name { 
+	font-family: helvetica;
+	 }
 h1 {
 	color: #8B92AD;
-	font-family: arial;  
-	font-weight: lighter;
+	font-family: arial; 
+	font-weight: lighter; 
+
 
 	}
 
 h2 {color: #8B92AD;
 	font-family: georgia;  
-	font-weight: lighter;
+	text-align: justify;
 	kerning: auto;
+	font-weight: lighter;
 	 }
 
 p {
@@ -28,9 +35,9 @@ p {
 	text-indent: 1em;
 	color: #E1E6FA;
 	padding: 30px;
-	margin: 10px
-	box-shadow: -3px 3px 10px #A7ABBA;
-	}
+	margin: 10px;
+	box-shadow: -10px 3px 10px #A7ABBA;
+	} 
 
 a:link {  
 	text-decoration: none; 
@@ -46,3 +53,22 @@ a:hover, a:focus, a:active {
 	text-decoration: none; 
 	color: #fff;
 	}
+@media screen and (max-width:900px){
+   body {
+        background:#eee;
+        margin: 10px;
+        float:none;
+        width:90%;
+        padding: 20px;
+
+    }
+    p {
+	background-color: #444A61;
+	font-family: Arial;
+	text-indent: 1em;
+	color: #E1E6FA;
+	padding: 10px;
+	margin: 30px;
+	box-shadow: -3px 3px 10px #A7ABBA;
+	} 
+	
