@@ -1,3 +1,7 @@
+html {
+	background-color: white;
+	height:100%;
+}
 body {
 	width:100%;
    	padding: 30px;
@@ -12,22 +16,41 @@ body {
 .name { 
 	font-family: helvetica;
 	 }
-
-.col1 {
+	.col1 {
 	float: left;
-	width: 30%;
+	width: 250px;
+	max-width: 250px;
 	padding: 10px;
 
 }
-.col2 {
+	.col2 {
 	float: left;
-	width: 30%;
+	width: 250px;
+	max-width: 250px;
 	padding: 10px;
 
 }
-.col3 {
+	.col3 {
 	float: left;
-	width: 30%;
+	width: 250px;
+	max-width: 250px;
+	padding: 10px;
+}
+	.col4 {
+	float: left; 
+	width: 250px;
+	padding: 10px;
+}
+	.col5 {
+	float: left;
+	width: 250px;
+	max-width: 250px;
+	padding: 10px;
+}
+	.col6 {
+	float: left;
+	width: 250px;
+	max-width: 250px;
 	padding: 10px;
 }
 h1 {
@@ -48,8 +71,10 @@ h2 {color: #8B92AD;
 p {
 	background-color: #444A61;
 	font-family: Arial;
+	position: center;
 	text-indent: 1em;
-	padding: 10px 10px 290px 10px;
+	padding: 10px;
+	height:290px;
 	color: #E1E6FA;
 	box-shadow: -3px 3px 10px #A7ABBA;
 	}
@@ -69,6 +94,7 @@ a:hover, a:focus, a:active {
 	text-decoration: none; 
 	color: #fff;
 	}
+/*
 @media screen and (max-width:900px){
    body {
         background:#FAFAFA;
@@ -109,6 +135,7 @@ a:hover, a:focus, a:active {
 	color: #E1E6FA;
 	padding:10px;
 	width: 75%;
+	height:100px;
 	box-shadow: -3px 3px 10px #A7ABBA;
 	} 
-	
+	*/
