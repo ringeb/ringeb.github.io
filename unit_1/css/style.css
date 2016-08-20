@@ -1,21 +1,23 @@
 html {
 	background-color: white;
-	height:100%;
 }
 body {
-	width:100%;
    	padding: 30px;
-    margin:0; auto;
+    margin: auto;
  	background-color: #eee;
-	text-align: justify; 
+	text-align: center; 
   	font-weight: lighter;
   	word-spacing: -1px;
   
 	}
+hr {
+	width: 400px;
+}
 
 .name { 
 	font-family: helvetica;
 	 }
+
 	.col1 {
 	float: left;
 	width: 250px;
@@ -71,7 +73,6 @@ h2 {color: #8B92AD;
 p {
 	background-color: #444A61;
 	font-family: Arial;
-	position: center;
 	text-indent: 1em;
 	padding: 10px;
 	height:290px;
