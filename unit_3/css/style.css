@@ -1,17 +1,31 @@
 .name { 
 	font-family: helvetica;
+	font-size: .9em;
 	 }
-header{
+
+
+ header{
 	height: 100px;
-	background-color: #007D37; 
+	width: 100%;
+	background-color: #000; 
+	margin-bottom: 5px;
+	padding: 20px;
+	z-index: -1;
+	position: relative;
 }
 
-
-.image { 
-   position: relative; 
-   width: 100%; 
-   box-shadow: -3px 3px 10px #A7ABBA
-   
+#circle {
+	width: 100px;
+	height: 100px;
+	background: #fff;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	font-size:20px;
+	color: #000;
+	line-height:100px;
+	text-align:center;
+	position: relative;
 }
 
 h2 { 
@@ -30,8 +44,18 @@ h2 {
 	text-decoration: none;
 	text-transform: uppercase;
 	word-spacing: 0em;	
+	margin: auto;
+	z-index: -2;
+	position:relative;
 		}
-
+img { 
+   width: 100%; 
+   padding:5px;
+   border:1px solid #000;
+   box-shadow: -3px 3px 10px #A7ABBA;
+   position: relative;
+   z-index: -3;
+}
 nav{
 
 	background-color: #007D37;
@@ -60,6 +84,7 @@ footer {
 	background-color: #007D37; 
 	color: #fff;
 	line-height: 1.33em;
+	margin: auto;
 	text-align: center;
 
 }
