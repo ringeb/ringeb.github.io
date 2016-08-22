@@ -10,7 +10,6 @@ body{
 
  header{
 	height: 100px;
-	width: 100%;
 	background-color: #cdcdcd; 
 	margin-bottom: 5px;
 	padding: 20px;
@@ -61,18 +60,36 @@ h2 {
 	margin: auto;
 	z-index: -2;
 	position: relative;
+}
+h3 {
 
+	color: #000;
+	font-family: Raleway; san-serif;
+	font-feature-settings: "'liga' 1";
+	font-kerning: auto;
+	font-style: normal;
+	font-size: 2em;
+	font-weight: 400;
+	letter-spacing: 0em;
+	line-height: 1.33em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: none;
+	word-spacing: -0.1em;
+	position: relative;
+	clear: left;
+}
 
-		}
 img { 
    width: 100%;
    max-width: 700px; 
+   margin-bottom: 20px;
    box-shadow: -3px 3px 10px #A7ABBA;
    z-index: -3;
    display: inline-block;
 }
 nav{
-	background-color: #cdcdcd;
+	background-color: #000;
 	padding:10px;
 	margin: 15px auto;
 	width:30%;  
@@ -143,5 +160,3 @@ a:hover, a:focus, a:active {
 	width: 256.6px;
 	padding: 15px;
 }
-
-img: hover {}
