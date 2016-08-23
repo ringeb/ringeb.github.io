@@ -1,5 +1,6 @@
 body{
 	margin-left: 15px;
+	max-width: 880px;
 }
 
 .name { 
@@ -100,7 +101,7 @@ nav{
 	font-kerning: auto;
 	font-style: normal;
 	font-size: 2em;
-	font-weight: 400;
+	font-weight: 50;
 	letter-spacing: 0em;
 	line-height: 1.33em;
 	text-align: center;
