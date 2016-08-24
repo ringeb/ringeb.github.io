@@ -71,8 +71,7 @@ h2 {
 	text-transform: none;
 	word-spacing: -0.1em;
 	margin:auto;
-	padding-bottom: 90px;
-	width: 50%;
+	padding-top: 15px;
 	max-width: 880px;
 }
 
@@ -185,22 +184,22 @@ a:hover, a:focus, a:active {
 	box-shadow: -3px 3px 10px #A7ABBA;
 }
  #projects{
- 	width: 880px;
+ 	max-width: 880px;
  	margin: auto;
  	background-color: white;
  }
  #ponder{
- 	width: 880px;
+ 	max-width: 880px;
  	margin: auto;
  	background-color: white;
  }
  #research{
- 	width: 880px;
+ 	max-width: 880px;
  	margin: 30px auto;
  	background-color: white;
  }
   #puppies{
- 	width: 880px;
+ 	max-width: 880px;
  	margin: auto;
  	background-color: white;
  }
