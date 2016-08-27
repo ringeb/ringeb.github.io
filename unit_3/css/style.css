@@ -26,7 +26,7 @@ time, mark, audio, video {
 
 body{
 	background-color: #EBEBEB;
-	font-size: 16px;
+	font-size: 100%;
 	margin: 0;
 	padding: 0;
 }
@@ -47,10 +47,9 @@ hr {
 
 h1 { 
 	color: #fff;
-	font-family: "Playfair Display";
-	font-feature-settings: "'liga' 1";
-	font-size: 8em;
-	font-weight: lighter;
+	font-family: "Playfair Display",'Times New Roman', Times, Serif;
+	font-size: 12vw;
+	font-weight: 100;
 	margin: auto;
 	padding: 11% 0%;
 	text-align: center;
@@ -164,7 +163,10 @@ a:hover, a:focus, a:active {
 	width: 256.6px;
 }
 #main_nav {
-	margin-left: 200px;
+	display: block;
+	margin: auto;
+	text-align: center;
+
 }
 #circle {
 	-moz-border-radius: 50px;
