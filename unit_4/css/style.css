@@ -40,7 +40,7 @@ header{
 }
 
 hr {
-	border-color: black;
+	border-color: #EBEBEB;
 	margin: 15px auto;
 	width: 12em;
 }
@@ -51,7 +51,7 @@ h1 {
 	font-size: 12vw;
 	font-weight: 100;
 	margin: auto;
-	padding: 11% 0%;
+	padding: 10% 0%;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -59,7 +59,6 @@ h1 {
 }
 
 h2 {
-	background-color: #fff
 	color: #000;
 	font-family: "Raleway"; san-serif;
 	font-feature-settings: "'liga' 1";
@@ -74,6 +73,7 @@ h2 {
 	text-decoration: none;
 	text-transform: none;
 	word-spacing: -0.1em;
+
 }
 
 nav a{
@@ -92,7 +92,7 @@ nav a{
 	font-weight: 50;
 	line-height: 1.33em;
 	margin: 15px auto;
-	max-width: 250px;
+	max-width: 170px;
 	min-width: 150px;
 	padding:10px;
 	text-align: center;
@@ -105,11 +105,10 @@ nav a:hover {
 }
 
 footer {
-	background: #fff; /* Old browsers */
-	background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+	background: -moz-linear-gradient(top,  #ebebeb 0%, #ffffff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ebebeb 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ebebeb 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 	color: #000;
 	font-size: 1em;
 	height: 90px;
@@ -129,7 +128,7 @@ a:hover, a:focus, a:active {
 	text-decoration: none; 
 	}
 .name { 
-	font-family: helvetica;
+	font-family: "semplicitapro", helvetica, sans-serif;
 	font-size: .9em;
 	 }
 
@@ -173,8 +172,8 @@ a:hover, a:focus, a:active {
 	background: #fd746c; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #fd746c , #ff9068); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #fd746c , #ff9068); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	/*background: #fff;*/
 	border-radius: 50px;
+	box-shadow: -.1px .1px 10px #000;
 	color: #fff;
 	font-size:20px;
 	height: 100px;
@@ -192,18 +191,15 @@ a:hover, a:focus, a:active {
 	padding: 20px;
 }
  #projects{
- 	background-color: white;
  	margin-top: 20px;
  	margin: auto;
  	max-width: 880px;
  }
  #ponder{
- 	background-color: white;
  	margin: auto;
  	max-width: 880px;
  }
  #research{
- 	background-color: white;
  	margin: 30px auto;
  	max-width: 880px;
  }
