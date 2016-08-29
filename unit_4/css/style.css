@@ -77,7 +77,9 @@ h2 {
 }
 
 nav a{
-	background-color: #fff;
+	background: #ECE9E6; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	border-radius: 5px;
 	box-shadow: -1px 1px 3px rgba(0,0,0,.60);
 	color: #000;
@@ -103,8 +105,12 @@ nav a:hover {
 }
 
 footer {
-	background-color: #cdcdcd;
-	color: #fff;
+	background: #fff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+	color: #000;
 	font-size: 1em;
 	height: 90px;
 	line-height: 1.33em;
@@ -112,13 +118,6 @@ footer {
 	text-align: center;
 	width: 100%
 }
-
-img:hover{
-	box-shadow: -3px 3px 10px rgba(0,0,0,.25);
-	transform: rotate(-.2deg);
-
-}
-
 
 a:visited {  
 	color: #000;
@@ -140,28 +139,28 @@ a:hover, a:focus, a:active {
 	box-shadow: -1px 1px 3px #A7ABBA;
 	float: left;
 	margin: .5%;
-	padding: 15px;
+	padding: 17px 15px 15px 17px ;
 	width: 32.33%;
 }
-.col2 {
-	border: none;
-	box-shadow: -3px 3px 10px #A7ABBA;
-	float: left;
-	margin-bottom: 20px;
-	margin: auto;
-	padding: 15px;
-	width: 256.6px;
-}
 
-.col3 {
-	border: none;
-	box-shadow: -3px 3px 10px #A7ABBA;
-	float: left;
-	margin-bottom: 20px;
-	margin: auto;
-	padding: 15px;
-	width: 256.6px;
-}
+.col1:hover{
+	box-shadow: -3px 3px 10px rgba(0,0,0,.25);
+	transform: rotate(-.2deg);
+}	
+
+.project{
+  	margin: auto;
+  	width: 98.5%;
+  	}
+ .ponder{
+  	margin: auto;
+  	width: 98.5%;
+  	}
+ .research{
+  	margin: auto;
+  	width: 98.5%;
+  	}
+
 #main_nav {
 	display: block;
 	margin: auto;
@@ -171,9 +170,12 @@ a:hover, a:focus, a:active {
 #circle {
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
-	background: #fff;
+	background: #fd746c; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #fd746c , #ff9068); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #fd746c , #ff9068); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	/*background: #fff;*/
 	border-radius: 50px;
-	color: #000;
+	color: #fff;
 	font-size:20px;
 	height: 100px;
 	margin: 0px;
@@ -205,8 +207,5 @@ a:hover, a:focus, a:active {
  	margin: 30px auto;
  	max-width: 880px;
  }
-  #puppies{
- 	background-color: white;
- 	margin: auto;
- 	max-width: 880px;
- }
+
+
