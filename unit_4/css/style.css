@@ -1,28 +1,11 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, c
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output,  section, summary,
-time, mark, audio, video {
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	margin: 0;
-	padding: 0;
-	vertical-align: baseline;
-}
+
 * {
+	border: 0;
 	box-sizing:border-box;
-	margin: 0;
+	font-size: 100%;
+	font: inherit;margin: 0;
 	padding: 0;
-}
+	vertical-align: baseline;}
 
 body{
 	background-color: #EBEBEB;
@@ -109,6 +92,7 @@ footer {
 	background: -webkit-linear-gradient(top,  #ebebeb 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom,  #ebebeb 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	clear: both;
 	color: #000;
 	font-size: 1em;
 	height: 90px;
@@ -145,13 +129,26 @@ a:hover, a:focus, a:active {
 .col1:hover{
 	box-shadow: -3px 3px 10px rgba(0,0,0,.25);
 	transform: rotate(-.2deg);
+	filter: grayscale(100%);
 }	
 
 .project{
   	margin: auto;
   	width: 98.5%;
+  	-moz-filter: saturate(100%);
+  	-webkit-filter: saturate(100%);
+  	-o-filter: saturate(100%);
+  	-ms-filter: saturate(100%);
+  	filter: saturate(100%);
   	}
- .ponder{
+.project:hover {
+  	-moz-filter: saturate(105%);
+  	-webkit-filter: saturate(105%);
+  	-o-filter: saturate(105%);
+  	-ms-filter: saturate(105%);
+  	filter: saturate(105%);
+	 }
+ .thoughts{
   	margin: auto;
   	width: 98.5%;
   	}
@@ -187,21 +184,30 @@ a:hover, a:focus, a:active {
 	background-image: no-repeat;
 	background-size: cover;
 	box-shadow: -3px 3px 10px #A7ABBA;
-	margin: auto;
+	margin: 0 auto 15px;
 	padding: 20px;
 }
- #projects{
+ #projects {
+ 	background-color: #fff;
+ 	box-shadow: -1px 1px 3px #A7ABBA;
  	margin-top: 20px;
- 	margin: auto;
+ 	margin: 0 auto 15px;
  	max-width: 880px;
+ 	padding: 10px;
  }
- #ponder{
- 	margin: auto;
+ #thoughts{
+ 	background-color: #fff;
+ 	box-shadow: -1px 1px 3px #A7ABBA;
+ 	margin: 0 auto 15px;
  	max-width: 880px;
+ 	padding: 10px;
  }
- #research{
- 	margin: 30px auto;
+ #research {
+ 	background-color: #fff;
+ 	box-shadow: -1px 1px 3px #A7ABBA;
+ 	margin: 0 auto 15px;
  	max-width: 880px;
+ 	padding: 10px;
  }
 
 
