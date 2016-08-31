@@ -22,19 +22,13 @@ header{
 	width: 100%;
 }
 
-hr {
-	border-color: #EBEBEB;
-	margin: 15px auto;
-	width: 12em;
-}
-
 h1 { 
 	color: #fff;
 	font-family: "Playfair Display",'Times New Roman', Times, Serif;
-	font-size: 12vw;
+	font-size: 10vw;
 	font-weight: 100;
 	margin: auto;
-	padding: 10% 0%;
+	padding: 10% 10%;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -50,7 +44,6 @@ h2 {
 	letter-spacing: 0em;
 	line-height: 1.33em;
 	margin:auto;
-	max-width: 880px;
 	padding-top: 15px;
 	text-align: center;
 	text-decoration: none;
@@ -69,10 +62,8 @@ nav a{
 	display: inline-block;
 	font-family: "Raleway"; san-serif;
 	font-feature-settings: "'liga' 1";
-	font-kerning: auto;
 	font-size: 2em;
 	font-style: normal;
-	font-weight: 50;
 	line-height: 1.33em;
 	margin: 15px auto;
 	max-width: 170px;
@@ -119,9 +110,11 @@ a:hover, a:focus, a:active {
 .col1 {
 	background-color: #fff;
 	border: none;
+	height: 100%;
 	box-shadow: -1px 1px 3px #A7ABBA;
 	float: left;
 	margin: .5%;
+	max-height: 359px;
 	padding: 17px 15px 15px 17px ;
 	width: 32.33%;
 }
@@ -138,7 +131,6 @@ a:hover, a:focus, a:active {
 	content: " ";
 	clear: both;
 	height: 0;
-
 }
 .project{
   	margin: auto;
@@ -156,11 +148,11 @@ a:hover, a:focus, a:active {
   	-ms-filter: saturate(105%);
   	filter: saturate(105%);
 	 }
- .thoughts{
+.thoughts{
   	margin: auto;
   	width: 98.5%;
   	}
- .research{
+.research{
   	margin: auto;
   	width: 98.5%;
   	}
@@ -169,7 +161,6 @@ a:hover, a:focus, a:active {
 	display: block;
 	margin: auto;
 	text-align: center;
-
 }
 #circle {
 	-moz-border-radius: 50px;
@@ -204,12 +195,41 @@ a:hover, a:focus, a:active {
  	max-width: 880px;
  	padding: 10px;
  }
+
  #thoughts{
  	background-color: #fff;
  	box-shadow: -1px 1px 3px #A7ABBA;
  	margin: 0 auto 15px;
  	max-width: 880px;
  	padding: 10px;
+ 	clear: both;
+ }
+ #thought1{
+ 	background-color: gold;
+ 	bottom-margin: 20px;
+ 	color: #000;
+ 	font-size: 1em;
+ 	height: 247px;
+ 	padding: 20px;
+ 	overflow: auto
+ }
+  #thought2{
+ 	background-color: gold;
+ 	bottom-margin: 20px;
+ 	color: #000;
+ 	font-size: 1em;
+ 	height: 247px;
+ 	padding: 20px;
+ 	overflow: auto
+ }
+  #thought3{
+ 	background-color: gold;
+ 	bottom-margin: 20px;
+ 	color: #000;
+ 	font-size: 1em;
+ 	height: 247px;
+ 	padding: 20px;
+ 	overflow: auto
  }
  #research {
  	background-color: #fff;
@@ -218,5 +238,22 @@ a:hover, a:focus, a:active {
  	max-width: 880px;
  	padding: 10px;
  }
-
-
+/*	float: left;
+	margin:0 33%;
+}
+#asideright {
+	background-color: gold;
+	box-shadow: -1px 1px 3px #A7ABBA;
+	display: block;
+	float: left;
+	padding: 30px;
+	position: fixed;
+	width: 250px;
+}
+#asideleft {
+	background-color: #EBEBEB;
+	display: block;
+	float: left;
+	position: fixed;
+	width: 250px;
+}*/
