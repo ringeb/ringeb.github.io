@@ -1,4 +1,3 @@
-
 * {
 	border: 0;
 	box-sizing:border-box;
@@ -119,6 +118,17 @@ a:hover, a:focus, a:active {
 	width: 32.33%;
 }
 
+.col2 {
+	background-color: #fff;
+	border: none;
+	height: 100%;
+	float: left;
+	margin: .5%;
+	max-height: 359px;
+	padding: 17px 15px 15px 17px ;
+	width: 32.33%;
+}
+
 .col1:hover{
 	box-shadow: -3px 3px 10px rgba(0,0,0,.25);
 	transform: rotate(-.2deg);
@@ -207,6 +217,7 @@ a:hover, a:focus, a:active {
  #thought1{
  	background-color: gold;
  	bottom-margin: 20px;
+ 	box-shadow: -1px 1px 3px #A7ABBA;
  	color: #000;
  	font-size: 1em;
  	height: 247px;
@@ -216,6 +227,7 @@ a:hover, a:focus, a:active {
   #thought2{
  	background-color: gold;
  	bottom-margin: 20px;
+ 	box-shadow: -1px 1px 3px #A7ABBA;
  	color: #000;
  	font-size: 1em;
  	height: 247px;
@@ -225,6 +237,7 @@ a:hover, a:focus, a:active {
   #thought3{
  	background-color: gold;
  	bottom-margin: 20px;
+ 	box-shadow: -1px 1px 3px #A7ABBA;
  	color: #000;
  	font-size: 1em;
  	height: 247px;
