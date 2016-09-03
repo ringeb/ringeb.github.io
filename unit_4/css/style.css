@@ -108,12 +108,9 @@ a:hover, a:focus, a:active {
 
 .col1 {
 	background-color: #fff;
-	border: none;
-	height: 100%;
 	box-shadow: -1px 1px 3px #A7ABBA;
 	float: left;
 	margin: .5%;
-	max-height: 359px;
 	padding: 17px 15px 15px 17px ;
 	width: 32.33%;
 }
@@ -132,7 +129,6 @@ a:hover, a:focus, a:active {
 .col1:hover{
 	box-shadow: -3px 3px 10px rgba(0,0,0,.25);
 	transform: rotate(-.2deg);
-	filter: grayscale(100%);
 }	
 .clearfix:after{
 	visibility: hidden;
@@ -142,31 +138,47 @@ a:hover, a:focus, a:active {
 	clear: both;
 	height: 0;
 }
-.project{
-  	margin: auto;
+.aside{
+  	}
+.projectimage{
   	width: 98.5%;
+  	float: left;
   	-moz-filter: saturate(100%);
   	-webkit-filter: saturate(100%);
   	-o-filter: saturate(100%);
   	-ms-filter: saturate(100%);
   	filter: saturate(100%);
   	}
-.project:hover {
+.projectimage:hover {
   	-moz-filter: saturate(105%);
   	-webkit-filter: saturate(105%);
   	-o-filter: saturate(105%);
   	-ms-filter: saturate(105%);
   	filter: saturate(105%);
 	 }
-.thoughts{
+.researchimage{
   	margin: auto;
   	width: 98.5%;
   	}
-.research{
-  	margin: auto;
-  	width: 98.5%;
-  	}
-
+ .thoughts{
+ 	background-color: gold;
+ 	bottom-margin: 20px;
+ 	box-shadow: -1px 1px 3px #A7ABBA;
+ 	color: #000;
+ 	font-size: 1em;
+ 	height: 247px;
+ 	padding: 20px;
+ 	overflow: auto
+ }
+ .thoughts:hover {
+ 	-moz-filter: saturate(105%);
+  	-webkit-filter: saturate(105%);
+  	-o-filter: saturate(105%);
+  	-ms-filter: saturate(105%);
+  	filter: saturate(105%);
+  	box-shadow: -3px 3px 10px rgba(0,0,0,.25);
+	transform: rotate(-.2deg);
+ }
 #main_nav {
 	display: block;
 	margin: auto;
@@ -189,84 +201,60 @@ a:hover, a:focus, a:active {
 	width: 100px;
 }
 
-#jungle {
+#splash {
 	background: url(../images/splash_image.jpg);
+	background-attachment:fixed;
 	background-image: no-repeat;
 	background-size: cover;
 	box-shadow: -3px 3px 10px #A7ABBA;
 	margin: 0 auto 15px;
 	padding: 20px;
 }
- #projects {
+#mainwrapper {
+	margin: auto;
+	max-width: 2000px;
+}
+
+ #projectswrapper {
  	background-color: #fff;
  	box-shadow: -1px 1px 3px #A7ABBA;
- 	margin-top: 20px;
- 	margin: 0 auto 15px;
+ 	display: inline;
+ 	float: left;
+ 	margin: 0 auto;
  	max-width: 880px;
  	padding: 10px;
+ 	position: relative;
  }
 
- #thoughts{
+#researchwrapper {
  	background-color: #fff;
  	box-shadow: -1px 1px 3px #A7ABBA;
  	margin: 0 auto 15px;
  	max-width: 880px;
  	padding: 10px;
+ 	position: relative;
  	clear: both;
  }
- #thought1{
- 	background-color: gold;
- 	bottom-margin: 20px;
- 	box-shadow: -1px 1px 3px #A7ABBA;
- 	color: #000;
- 	font-size: 1em;
- 	height: 247px;
- 	padding: 20px;
- 	overflow: auto
- }
-  #thought2{
- 	background-color: gold;
- 	bottom-margin: 20px;
- 	box-shadow: -1px 1px 3px #A7ABBA;
- 	color: #000;
- 	font-size: 1em;
- 	height: 247px;
- 	padding: 20px;
- 	overflow: auto
- }
-  #thought3{
- 	background-color: gold;
- 	bottom-margin: 20px;
- 	box-shadow: -1px 1px 3px #A7ABBA;
- 	color: #000;
- 	font-size: 1em;
- 	height: 247px;
- 	padding: 20px;
- 	overflow: auto
- }
- #research {
+
+ #thoughtswrapper{
  	background-color: #fff;
  	box-shadow: -1px 1px 3px #A7ABBA;
  	margin: 0 auto 15px;
  	max-width: 880px;
  	padding: 10px;
+ 	position: relative;
+ 	clear: both;
  }
-/*	float: left;
-	margin:0 33%;
+ 
+#asideleft {
+	float: left;
+	margin: 70px 1%; 
+	position: relative;
+	width: 26%;
 }
 #asideright {
-	background-color: gold;
-	box-shadow: -1px 1px 3px #A7ABBA;
-	display: block;
 	float: left;
-	padding: 30px;
-	position: fixed;
-	width: 250px;
+	margin: 70px 1%;
+	position: relative;
+	width: 26%;
 }
-#asideleft {
-	background-color: #EBEBEB;
-	display: block;
-	float: left;
-	position: fixed;
-	width: 250px;
-}*/
