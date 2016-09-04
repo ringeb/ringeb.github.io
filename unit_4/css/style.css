@@ -139,6 +139,7 @@ a:hover, a:focus, a:active {
 	height: 0;
 }
 .aside{
+  	width: 100%;
   	}
 .projectimage{
   	width: 98.5%;
@@ -213,8 +214,11 @@ a:hover, a:focus, a:active {
 #mainwrapper {
 	margin: auto;
 	max-width: 2000px;
+	width: 100%;
 }
-
+#subwrapper {
+width: 48%;
+}
  #projectswrapper {
  	background-color: #fff;
  	box-shadow: -1px 1px 3px #A7ABBA;
