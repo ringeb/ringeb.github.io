@@ -217,14 +217,15 @@ a:hover, a:focus, a:active {
 	width: 100%;
 }
 #subwrapper {
-width: 48%;
+	float: left;
+	width: 44%;
 }
  #projectswrapper {
  	background-color: #fff;
  	box-shadow: -1px 1px 3px #A7ABBA;
  	display: inline;
  	float: left;
- 	margin: 0 auto;
+ 	margin: 0 auto 15px;
  	max-width: 880px;
  	padding: 10px;
  	position: relative;
@@ -251,7 +252,7 @@ width: 48%;
  }
  
 #asideleft {
-	float: left;
+	float: left; 
 	margin: 70px 1%; 
 	position: relative;
 	width: 26%;
