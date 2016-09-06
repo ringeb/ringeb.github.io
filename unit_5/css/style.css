@@ -82,7 +82,6 @@ footer {
 	background: -webkit-linear-gradient(top,  #ebebeb 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom,  #ebebeb 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-	clear: both;
 	color: #000;
 	font-size: 1em;
 	height: 90px;
@@ -92,15 +91,26 @@ footer {
 	width: 100%
 }
 
-a:visited {  
+a:link{ 
 	color: #000;
 	text-decoration: none; 
 	}
-	
-a:hover, a:focus, a:active { 
+
+a:visited{  
+	color: #000;
+	text-decoration: none; 
+	}
+
+a:hover{ 
 	color: #FF5339;
 	text-decoration: none; 
 	}
+
+a:active { 
+	color: #FF5339;
+	text-decoration: none; 
+	}
+
 .name { 
 	font-family: "semplicitapro", helvetica, sans-serif;
 	font-size: .9em;
@@ -219,6 +229,7 @@ a:hover, a:focus, a:active {
 #subwrapper {
 	float: left;
 	width: 44%;
+	min-width: 850px;
 }
  #projectswrapper {
  	background-color: #fff;
@@ -248,18 +259,11 @@ a:hover, a:focus, a:active {
  	max-width: 880px;
  	padding: 10px;
  	position: relative;
- 	clear: both;
  }
  
-#asideleft {
+#mainwrapper aside {
 	float: left; 
 	margin: 70px 1%; 
-	position: relative;
-	width: 26%;
-}
-#asideright {
-	float: left;
-	margin: 70px 1%;
 	position: relative;
 	width: 26%;
 }
