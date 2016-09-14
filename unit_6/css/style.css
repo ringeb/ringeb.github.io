@@ -137,6 +137,7 @@ a:active {
 	background-color: #fff;
 	box-shadow: -1px 1px 3px #A7ABBA;
 	float: left;
+	height: 282px;
 	margin: .5%;
 	padding: 17px 15px 15px 17px ;
 	width: 32.33%;
@@ -169,6 +170,7 @@ a:active {
   	width: 100%;
   	}
 .projectimage{
+  	max-height: 250px;
   	width: 98.5%;
   	float: left;
   	-moz-filter: saturate(100%);
