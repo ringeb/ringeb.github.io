@@ -153,8 +153,10 @@ footer {
 	box-shadow: -1px 1px 3px #A7ABBA;
 	float: left;
 	margin: .5%;
-	padding: 17px 15px 15px 17px ;
-	width: 32.33%;
+	padding: 17px 0px 0px 17px;
+    width: 260px;
+    height: 390px;
+    position: relative;
 }
 
 .col2 {
@@ -165,6 +167,7 @@ footer {
 	max-height: 359px;
 	padding: 17px 5px 15px 5px ;
 	width: 32.33%;
+    height: 390px;
 }
 
 .col1:hover{
@@ -183,8 +186,9 @@ footer {
   	width: 100%;
   	}
 .projectimage{
-  	width: 98.5%;
-  	float: left;
+  	position: absolute;
+  	width: 500px;
+    clip: rect(0px 225px 290px 0px);
   	-moz-filter: saturate(100%);
   	-webkit-filter: saturate(100%);
   	-o-filter: saturate(100%);
@@ -199,8 +203,9 @@ footer {
   	filter: saturate(105%);
 	 }
 .researchimage{
-  	margin: auto;
-  	width: 98.5%;
+  	position: absolute;
+  	width: 500px;
+    clip: rect(0px 225px 290px 0px);
   	}
  .thoughts{
  	background-color: gold;
@@ -215,6 +220,10 @@ footer {
  .thoughts:hover {
   	box-shadow: -3px 3px 10px rgba(0,0,0,.25);
 	transform: rotate(-.2deg)navitem
+}
+.overlay{
+	position: absolute;
+	bottom: 40px;
 }
 #logo {
 	margin: 3%;
@@ -235,13 +244,11 @@ footer {
 }
 #mainwrapper {
 	margin: auto;
-	max-width: 1280px;
 	width: 100%;
 }
 #subwrapper {
-	float: left;
-	width: 64.5%;
-	min-width: 720px;
+	width: 880px;
+	margin: auto;
 }
  #projectswrapper {
  	background-color: #fff;
@@ -249,8 +256,7 @@ footer {
  	display: inline;
  	float: left;
  	margin: 0 auto 15px;
- 	max-width: 880px;
- 	padding: 10px;
+ 	padding: 4.1%;
  	position: relative;
  }
 
@@ -258,8 +264,7 @@ footer {
  	background-color: #fff;
  	box-shadow: -1px 1px 3px #A7ABBA;
  	margin: 0 auto 15px;
- 	max-width: 880px;
- 	padding: 10px;
+ 	padding: 4.1%;
  	position: relative;
  	clear: both;
  }
@@ -268,15 +273,7 @@ footer {
  	background-color: #fff;
  	box-shadow: -1px 1px 3px #A7ABBA;
  	margin: 0 auto 15px;
- 	max-width: 880px;
- 	padding: 10px;
+ 	padding: 4.1%;
  	position: relative;
  }
  
-#mainwrapper aside {
-	float: left; 
-	margin: 70px 1%; 
-	position: relative;
-	width: 26%;
-	max-width: 200px
-}
