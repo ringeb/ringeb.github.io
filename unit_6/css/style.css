@@ -185,10 +185,16 @@ footer {
 .aside{
   	width: 100%;
   	}
+
+ .butter{
+    height: 290px;
+ }
 .projectimage{
-  	position: absolute;
-  	width: 500px;
-    clip: rect(0px 225px 290px 0px);
+   	clip: rect(0px 225px 290px 0px);
+    cursor: pointer;
+    height: 290px;
+    position: absolute;
+    margin: auto;
   	-moz-filter: saturate(100%);
   	-webkit-filter: saturate(100%);
   	-o-filter: saturate(100%);
@@ -202,11 +208,6 @@ footer {
   	-ms-filter: saturate(105%);
   	filter: saturate(105%);
 	 }
-.researchimage{
-  	position: absolute;
-  	width: 500px;
-    clip: rect(0px 225px 290px 0px);
-  	}
  .thoughts{
  	background-color: gold;
  	bottom-margin: 20px;
@@ -222,8 +223,7 @@ footer {
 	transform: rotate(-.2deg)navitem
 }
 .overlay{
-	position: absolute;
-	bottom: 40px;
+	position: relative;
 }
 #logo {
 	margin: 3%;
