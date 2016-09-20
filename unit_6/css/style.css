@@ -50,9 +50,9 @@ h2 {
 h3 {
 	color: #000;
 	display: inline-block;
-	font-family: "Raleway" san-serif;
+	font-family: "Raleway";
 	font-feature-settings: "'liga' 1";
-	font-size: 1.5em;
+	font-size: 1.4em;
 	font-weight: 400;
 	letter-spacing: 0em;
 	line-height: 1em;
@@ -62,6 +62,10 @@ h3 {
 	text-decoration: none;
 	text-transform: none;
 	word-spacing: -0.1em;
+}
+p {
+	font-family: georgia Serif;
+	padding: 5px 0px;
 }
 
 li {
