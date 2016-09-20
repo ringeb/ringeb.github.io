@@ -10,7 +10,7 @@
 
 body{
 	background-color: #FFF;
-	font-size: 100%;
+	font-size: 16px;
 	margin: 0;
 	padding: 0;
 }
@@ -63,12 +63,15 @@ h3 {
 	text-transform: none;
 	word-spacing: -0.1em;
 }
+
+li {
+	display: inline-block;
+}
 nav { 
 	display: inline;
 	padding:10px;
  }
-nav a{
-	
+nav a{	
 }
 
 a:link{ 
@@ -102,9 +105,8 @@ footer {
 	width: 100%;
 }
 
-.menu{
-	background-color: #FFF;
-	padding: 20px 10px;
+.menu ul{
+	margin-left: 5%;
 }
 
 .menu a{
@@ -117,7 +119,7 @@ footer {
 	font-size: 1.2em;
 	font-style: normal;
 	line-height: 1.33em;
-	margin: 20px 0 20px 10px;
+	margin: 0px 0 20px 10px;
 	padding: 20px 20px;
 	word-spacing: -0.1em;
 }
@@ -192,7 +194,7 @@ footer {
 .projectimage{
    	clip: rect(0px 225px 290px 0px);
     cursor: pointer;
-    height: 290px;
+    height: 300px;
     position: absolute;
     margin: auto;
   	-moz-filter: saturate(100%);
@@ -238,16 +240,12 @@ footer {
 	margin: 5px auto 15px;
 	padding: 20px;
 }
-#keywrapper {
-	margin: auto;
-	width: 100%;
-}
 #mainwrapper {
 	margin: auto;
 	width: 100%;
 }
 #subwrapper {
-	width: 880px;
+	max-width: 880px;
 	margin: auto;
 }
  #projectswrapper {
