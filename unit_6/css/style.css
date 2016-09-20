@@ -106,7 +106,8 @@ footer {
 }
 
 .menu ul{
-	margin-left: 5%;
+	float: right;
+	margin-right: 5%
 }
 
 .menu a{
@@ -251,8 +252,6 @@ footer {
  #projectswrapper {
  	background-color: #fff;
  	box-shadow: -1px 1px 3px #A7ABBA;
- 	display: inline;
- 	float: left;
  	margin: 0 auto 15px;
  	padding: 4.1%;
  	position: relative;
