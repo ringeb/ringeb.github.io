@@ -161,8 +161,8 @@ footer {
 	float: left;
 	margin: .5%;
 	padding: 17px 0px 0px 17px;
-    width: 260px;
-    height: 390px;
+    width: 32.3%;
+    height: 430px;
     position: relative;
 }
 
@@ -194,12 +194,12 @@ footer {
   	}
 
  .butter{
-    height: 290px;
+    height: 340px;
  }
 .projectimage{
-   	clip: rect(0px 225px 290px 0px);
+   	clip: rect(0px 280px 350px 0px);
     cursor: pointer;
-    height: 300px;
+    height: 375px;
     position: absolute;
     margin: auto;
   	-moz-filter: saturate(100%);
@@ -221,7 +221,7 @@ footer {
  	box-shadow: -1px 1px 3px #A7ABBA;
  	color: #000;
  	font-size: 1em;
- 	height: 247px;
+ 	height: 300px;
  	padding: 20px;
  	overflow: auto
  }
@@ -250,7 +250,7 @@ footer {
 	width: 100%;
 }
 #subwrapper {
-	max-width: 880px;
+	max-width: 1080px;
 	margin: auto;
 }
  #projectswrapper {
