@@ -40,7 +40,7 @@ h2 {
 	letter-spacing: 0em;
 	line-height: 1.33em;
 	margin:auto;
-	padding-top: 15px;
+	padding: 15px;
 	text-align: center;
 	text-decoration: none;
 	text-transform: none;
@@ -69,13 +69,15 @@ p {
 }
 
 li {
-	display: inline-block;
+	display: none;
+	padding: 20px;
 }
 nav { 
 	display: inline;
 	padding:10px;
  }
 nav a{	
+	display: none;
 }
 
 a:link{ 
@@ -89,6 +91,7 @@ a:visited{
 	}
 
 a:hover{ 
+	display: block;
 	color: #FF5339;
 	text-decoration: none; 
 	}
@@ -109,17 +112,13 @@ footer {
 	width: 100%;
 }
 
-.menu ul{
-	float: right;
-	margin-right: 5%
-}
 
-.menu a{
+.menu label{
 	background-color: #fff;
 	border-left: .5px solid #EFEFEF;
 	color: #000;
-	display: inline-block;
-	font-family: "Raleway"; san-serif;
+	display: block;
+	font-family: "Raleway"; 
 	font-feature-settings: "'liga' 1";
 	font-size: 1.2em;
 	font-style: normal;
@@ -127,6 +126,8 @@ footer {
 	margin: 0px 0 20px 10px;
 	padding: 20px 20px;
 	word-spacing: -0.1em;
+	float: right;
+	margin-right: 2%
 }
 
 .menu a:link{ 
@@ -142,13 +143,16 @@ footer {
 .menu a:hover{ 
 	box-shadow: -3px 3px 10px rgba(0,0,0,.25);
 	color: #FF5339;
+	display: block;
 	text-decoration: none; 
 	}
+
 
 .menu a:active { 
 	color: #FF5339;
 	text-decoration: none; 
 	}
+
 
 .name { 
 	font-family: "semplicitapro", helvetica, sans-serif;
@@ -277,4 +281,5 @@ footer {
  	padding: 4.1%;
  	position: relative;
  }
+
  
