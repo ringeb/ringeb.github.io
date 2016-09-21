@@ -140,7 +140,7 @@ footer {
 	text-decoration: none; 
 	}
 
-.menu a:hover{ 
+.menu:hover{ 
 	box-shadow: -3px 3px 10px rgba(0,0,0,.25);
 	color: #FF5339;
 	display: block;
