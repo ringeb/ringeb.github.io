@@ -76,9 +76,6 @@ nav {
 	display: inline;
 	padding:10px;
  }
-nav a{	
-	display: none;
-}
 
 a:link{ 
 	color: #000;
@@ -152,7 +149,14 @@ footer {
 	color: #FF5339;
 	text-decoration: none; 
 	}
+ .menu:hover nav a
+ {
+ 	display: block;
 
+ }
+ .menu:hover > nav li{
+ 	display: block;
+ }
 
 .name { 
 	font-family: "semplicitapro", helvetica, sans-serif;
