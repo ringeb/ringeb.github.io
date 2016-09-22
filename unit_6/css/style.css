@@ -68,10 +68,32 @@ p {
 	padding: 5px 0px;
 }
 
-li {
-	display: none;
-	padding: 20px;
+ul {
 }
+
+
+#menu-toggle {
+  display: none;
+}
+
+#menu {
+  	background-color: #fff;
+	border-left: .5px solid #EFEFEF;
+	color: #000;
+	font-family: "Raleway"; 
+	font-feature-settings: "'liga' 1";
+	font-size: 1.2em;
+	font-style: normal;
+	line-height: 1.33em;
+	display: none;
+	padding: 10px;
+	margin-left: 90%
+}
+
+#menu-toggle:checked + #menu {
+  display: block;
+}
+
 nav { 
 	display: inline;
 	padding:10px;
@@ -110,9 +132,9 @@ footer {
 }
 
 
-.menu label{
+label {
 	background-color: #fff;
-	border-left: .5px solid #EFEFEF;
+	cursor: pointer;
 	color: #000;
 	display: block;
 	font-family: "Raleway"; 
@@ -120,43 +142,15 @@ footer {
 	font-size: 1.2em;
 	font-style: normal;
 	line-height: 1.33em;
-	margin: 0px 0 20px 10px;
-	padding: 20px 20px;
 	word-spacing: -0.1em;
-	float: right;
-	margin-right: 2%
+	margin-left: 90%
 }
 
-.menu a:link{ 
-	color: #000;
-	text-decoration: none; 
-	}
+li {
+	list-style-type: none;
+	padding: 5px;
 
-.menu a:visited{  
-	color: #000;
-	text-decoration: none; 
-	}
-
-.menu:hover{ 
-	box-shadow: -3px 3px 10px rgba(0,0,0,.25);
-	color: #FF5339;
-	display: block;
-	text-decoration: none; 
-	}
-
-
-.menu a:active { 
-	color: #FF5339;
-	text-decoration: none; 
-	}
- .menu:hover nav a
- {
- 	display: block;
-
- }
- .menu:hover > nav li{
- 	display: block;
- }
+}
 
 .name { 
 	font-family: "semplicitapro", helvetica, sans-serif;
@@ -188,7 +182,8 @@ footer {
 .col1:hover{
 	box-shadow: -3px 3px 10px rgba(0,0,0,.25);
 	transform: rotate(-.2deg);
-}	
+}
+
 .clearfix:after{
 	visibility: hidden;
 	display: block;
@@ -197,11 +192,12 @@ footer {
 	clear: both;
 	height: 0;
 }
+
 .aside{
   	width: 100%;
   	}
 
- .butter{
+.butter{
     height: 340px;
  }
 .projectimage{
@@ -215,14 +211,16 @@ footer {
   	-o-filter: saturate(100%);
   	-ms-filter: saturate(100%);
   	filter: saturate(100%);
-  	}
+}
+
 .projectimage:hover {
   	-moz-filter: saturate(105%);
   	-webkit-filter: saturate(105%);
   	-o-filter: saturate(105%);
   	-ms-filter: saturate(105%);
   	filter: saturate(105%);
-	 }
+}
+
  .thoughts{
  	background-color: gold;
  	bottom-margin: 20px;
@@ -233,17 +231,21 @@ footer {
  	padding: 20px;
  	overflow: auto
  }
+
  .thoughts:hover {
   	box-shadow: -3px 3px 10px rgba(0,0,0,.25);
 	transform: rotate(-.2deg)navitem
 }
+
 .overlay{
 	position: relative;
 }
+
 #logo {
 	margin: 3%;
 	width: 94%;
 }
+
 #splash {
 	background-color: #000;
 	background-attachment:fixed;
@@ -253,14 +255,17 @@ footer {
 	margin: 5px auto 15px;
 	padding: 20px;
 }
+
 #mainwrapper {
 	margin: auto;
 	width: 100%;
 }
+
 #subwrapper {
 	max-width: 1080px;
 	margin: auto;
 }
+
  #projectswrapper {
  	background-color: #fff;
  	box-shadow: -1px 1px 3px #A7ABBA;
