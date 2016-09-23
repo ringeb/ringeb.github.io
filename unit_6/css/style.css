@@ -242,6 +242,9 @@ li {
 	width: 94%;
 }
 
+.responisve ~ img, h3, p {
+	display: hide;
+}
 #splash {
 	background-color: #000;
 	background-attachment:fixed;
@@ -285,6 +288,10 @@ li {
  	margin: 0 auto 15px;
  	padding: 4.1%;
  	position: relative;
+ }
+
+ @media only screen and (max-width:800px) {
+
  }
 
  
