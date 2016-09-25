@@ -57,7 +57,7 @@ h3 {
 	letter-spacing: 0em;
 	line-height: 1em;
 	margin: auto;
-	padding-top: 15px;
+	top-padding: 1.5%;
 	text-align: center;
 	text-decoration: none;
 	text-transform: none;
@@ -66,28 +66,6 @@ h3 {
 p {
 	font-family: georgia Serif;
 	padding: 5px 0px;
-}
-
-#menu-toggle {
-  display: none;
-}
-
-#menu {
-  	background-color: #fff;
-	border-left: .5px solid #EFEFEF;
-	color: #000;
-	font-family: "Raleway"; 
-	font-feature-settings: "'liga' 1";
-	font-size: 1.2em;
-	font-style: normal;
-	line-height: 1.33em;
-	display: none;
-	padding: 10px;
-	margin-left: 90%
-}
-
-#menu-toggle:checked + #menu {
-  display: block;
 }
 
 nav { 
@@ -160,7 +138,7 @@ li {
 	margin: .5%;
 	padding: 17px 0px 0px 17px;
     width: 32.3%;
-    height: 430px;
+    max-height: 480px;
     position: relative;
 }
 
@@ -172,7 +150,7 @@ li {
 	max-height: 359px;
 	padding: 17px 5px 15px 5px ;
 	width: 32.33%;
-    height: 390px;
+    height: 480px;
 }
 
 .col1:hover{
@@ -194,13 +172,12 @@ li {
   	}
 
 .butter{
-    height: 340px;
+   max-height: 385px;
  }
 .projectimage{
-   	clip: rect(0px 280px 350px 0px);
     cursor: pointer;
-    height: 375px;
-    position: absolute;
+   	max-height: 375px;
+    width: 95%;
     margin: auto;
   	-moz-filter: saturate(100%);
   	-webkit-filter: saturate(100%);
@@ -230,11 +207,22 @@ li {
 
  .thoughts:hover {
   	box-shadow: -3px 3px 10px rgba(0,0,0,.25);
-	transform: rotate(-.2deg)navitem
+	transform: rotate(-.2deg);
 }
 
 .overlay{
 	position: relative;
+	margin-bottom: 3%
+}
+
+.responsive {
+	display: none;
+}
+
+.responsiveimage{
+    cursor: pointer;
+    width: 100%;
+    margin: auto;
 }
 
 #logo {
@@ -242,9 +230,28 @@ li {
 	width: 94%;
 }
 
-.responisve ~ img, h3, p {
-	display: hide;
+#menu-toggle {
+  display: none;
 }
+
+#menu {
+  	background-color: #fff;
+	border-left: .5px solid #EFEFEF;
+	color: #000;
+	font-family: "Raleway"; 
+	font-feature-settings: "'liga' 1";
+	font-size: 1.2em;
+	font-style: normal;
+	line-height: 1.33em;
+	display: none;
+	padding: 10px;
+	margin-left: 90%
+}
+
+#menu-toggle:checked + #menu {
+  display: block;
+}
+
 #splash {
 	background-color: #000;
 	background-attachment:fixed;
@@ -252,7 +259,6 @@ li {
 	background-size: cover;
 	box-shadow: -3px 3px 10px #A7ABBA;
 	margin: 5px auto 15px;
-	padding: 20px;
 }
 
 #mainwrapper {
@@ -268,16 +274,16 @@ li {
  #projectswrapper {
  	background-color: #fff;
  	box-shadow: -1px 1px 3px #A7ABBA;
- 	margin: 0 auto 15px;
- 	padding: 4.1%;
+ 	margin: 0 auto 1%;
+ 	padding: 2.1%;
  	position: relative;
  }
 
 #researchwrapper {
  	background-color: #fff;
  	box-shadow: -1px 1px 3px #A7ABBA;
- 	margin: 0 auto 15px;
- 	padding: 4.1%;
+ 	margin: 0 auto 1%;
+ 	padding: 2.1%;
  	position: relative;
  	clear: both;
  }
@@ -285,13 +291,43 @@ li {
  #thoughtswrapper{
  	background-color: #fff;
  	box-shadow: -1px 1px 3px #A7ABBA;
- 	margin: 0 auto 15px;
- 	padding: 4.1%;
+ 	margin: 0 auto 1%;
+ 	padding: 2.1%;
  	position: relative;
  }
 
- @media only screen and (max-width:800px) {
+@media only screen and (max-width: 900px) {
 
+	.overlay p {
+		display: none;
+	}
+}
+
+ @media only screen and (max-width:560px) {
+
+.col1 {
+	display: none;
+}
+.responsive {
+	display: block;
+	margin-bottom: 5%
+}
+.overlay {
+	display: none;
+}
+.projectimage {
+	max-height: 100%;
+	width: 100%;
+}
+#projectswrapper{
+	padding: 3%;
+}
+#researchwrapper{
+	padding: 3%;
+}
+#thoughtswrapper{
+	padding: 3%;
+}
  }
 
  
