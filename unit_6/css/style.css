@@ -152,6 +152,26 @@ li {
 	width: 32.33%;
     height: 480px;
 }
+.col3 {
+	background-color: #fff;
+	box-shadow: -1px 1px 3px #A7ABBA;
+	float: left;
+	margin: .5%;
+	padding: 17px 0px 0px 17px;
+    width: 32.3%;
+    max-height: 480px;
+    position: relative;
+}
+
+.col4 {
+	background-color: #fff;
+	height: 100%;
+	float: left;
+	margin: .2%;
+	max-height: 359px;
+	padding: 17px 5px 15px 5px ;
+	width: 32.33%;
+}
 
 .col1:hover{
 	box-shadow: -3px 3px 10px rgba(0,0,0,.25);
@@ -171,7 +191,7 @@ li {
   	width: 100%;
   	}
 
-.butter{
+.imagewrapper{
    max-height: 385px;
  }
 .projectimage{
@@ -211,6 +231,10 @@ li {
 }
 
 .overlay{
+	position: relative;
+	margin-bottom: 3%
+}
+.columntext {
 	position: relative;
 	margin-bottom: 3%
 }
@@ -305,6 +329,12 @@ li {
 	.overlay p {
 		display: none;
 	}
+	.col4 {
+	width:  45%;
+}
+	.columntext p {
+		display: none;
+	}
 	#menu {
 		font-size: 1.2em;
 	}
@@ -313,7 +343,7 @@ li {
  @media only screen and (max-width:600px) {
 
 body{
- font-size:20px;
+ font-size:18px;
 }
 .col1 {
 	display: none;
@@ -321,6 +351,16 @@ body{
 .col2 {
 	display: none;
 }
+.col3 {
+	float: none;
+	max-height: none;
+	width: 100%;
+}
+.col4 {
+	float: none;
+	width: 100%;
+}
+
 .responsive {
 	display: block;
 	margin-bottom: 5%
@@ -328,7 +368,14 @@ body{
 .overlay {
 	display: none;
 }
-
+.columntext p {
+	display: block;
+}
+.imagewrapper {
+	width: 96%;
+	max-height: none;
+	margin-bottom: 10px;
+}
 .projectimage {
 	max-height: 100%;
 	width: 100%;
