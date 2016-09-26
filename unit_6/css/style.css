@@ -245,7 +245,7 @@ li {
 	line-height: 1.33em;
 	display: none;
 	padding: 10px;
-	margin-left: 10%;
+	margin-left: 5%;
 }
 
 #menu-toggle:checked + #menu {
