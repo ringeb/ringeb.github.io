@@ -52,7 +52,7 @@ h3 {
 	display: inline-block;
 	font-family: "Raleway";
 	font-feature-settings: "'liga' 1";
-	font-size: 1.4em;
+	font-size: 1.5em;
 	font-weight: 400;
 	letter-spacing: 0em;
 	line-height: 1em;
@@ -117,7 +117,7 @@ label {
 	font-style: normal;
 	line-height: 1.33em;
 	word-spacing: -0.1em;
-	margin-left: 90%
+	margin-left: 5%;
 }
 
 li {
@@ -245,7 +245,7 @@ li {
 	line-height: 1.33em;
 	display: none;
 	padding: 10px;
-	margin-left: 90%
+	margin-left: 10%;
 }
 
 #menu-toggle:checked + #menu {
@@ -259,6 +259,7 @@ li {
 	background-size: cover;
 	box-shadow: -3px 3px 10px #A7ABBA;
 	margin: 5px auto 15px;
+	padding: 20px;
 }
 
 #mainwrapper {
@@ -297,15 +298,27 @@ li {
  }
 
 @media only screen and (max-width: 900px) {
+	label{
+		font-size: 1.2em;
+	}
 
 	.overlay p {
 		display: none;
 	}
+	#menu {
+		font-size: 1.2em;
+	}
 }
 
- @media only screen and (max-width:560px) {
+ @media only screen and (max-width:600px) {
 
+body{
+ font-size:20px;
+}
 .col1 {
+	display: none;
+}
+.col2 {
 	display: none;
 }
 .responsive {
@@ -315,6 +328,7 @@ li {
 .overlay {
 	display: none;
 }
+
 .projectimage {
 	max-height: 100%;
 	width: 100%;
