@@ -138,7 +138,6 @@ li {
 	margin: .5%;
 	padding: 17px 0px 0px 17px;
     width: 32.3%;
-    max-height: 480px;
     position: relative;
 }
 
@@ -191,11 +190,9 @@ li {
   	}
 
 .imagewrapper{
-   max-height: 385px;
  }
 .projectimage{
     cursor: pointer;
-   	max-height: 375px;
     width: 95%;
     margin: auto;
   	-moz-filter: saturate(100%);
@@ -351,8 +348,7 @@ body{
 	display: none;
 }
 .col3 {
-	float: none;
-	max-height: none;
+	float: none;x
 	width: 100%;
 }
 .col4 {
@@ -372,11 +368,9 @@ body{
 }
 .imagewrapper {
 	width: 96%;
-	max-height: none;
 	margin-bottom: 10px;
 }
 .projectimage {
-	max-height: 100%;
 	width: 96%;
 	margin-bottom: 10px;
 }
