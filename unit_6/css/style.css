@@ -98,7 +98,6 @@ footer {
 	background-color: #fff;
 	color: #000;
 	font-size: 1em;
-	height: 90px;
 	line-height: 1.33em;
 	padding: 15px;
 	text-align: center;
@@ -143,13 +142,10 @@ li {
 
 .col2 {
 	background-color: #fff;
-	height: 100%;
 	float: left;
 	margin: .2%;
-	max-height: 359px;
 	padding: 17px 5px 15px 5px ;
 	width: 32.33%;
-    height: 480px;
 }
 .col3 {
 	background-color: #fff;
@@ -163,10 +159,8 @@ li {
 
 .col4 {
 	background-color: #fff;
-	height: 100%;
 	float: left;
 	margin: .2%;
-	max-height: 359px;
 	padding: 17px 5px 15px 5px ;
 	width: 32.33%;
 }
