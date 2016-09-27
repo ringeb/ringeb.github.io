@@ -351,10 +351,8 @@ body{
 	float: none;
 	width: 100%;
 }
-
 .responsive {
 	display: block;
-	margin-bottom: 5%;
 }
 .overlay {
 	display: none;
