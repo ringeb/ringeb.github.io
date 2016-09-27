@@ -133,6 +133,7 @@ li {
 .col1 {
 	background-color: #fff;
 	box-shadow: -1px 1px 3px #A7ABBA;
+	display: inline-block;
 	float: left;
 	margin: .5%;
 	padding: 17px 0px 0px 17px;
@@ -183,8 +184,6 @@ li {
   	width: 100%;
   	}
 
-.imagewrapper{
- }
 .projectimage{
     cursor: pointer;
     width: 95%;
