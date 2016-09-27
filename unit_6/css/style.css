@@ -343,12 +343,14 @@ body{
 }
 .col1 {
 	display: none;
+	width: 100%;
 }
 .col2 {
 	display: none;
+	width: 100%;
 }
 .col3 {
-	float: none;x
+	float: none;
 	width: 100%;
 }
 .col4 {
@@ -358,7 +360,7 @@ body{
 
 .responsive {
 	display: block;
-	margin-bottom: 5%
+	margin-bottom: 5%;
 }
 .overlay {
 	display: none;
