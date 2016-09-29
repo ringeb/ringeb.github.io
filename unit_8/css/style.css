@@ -225,6 +225,7 @@ li {
 
 }
 .columntext {
+	padding-left: 17px;
 	position: relative;
 	margin-bottom: 3%
 }
