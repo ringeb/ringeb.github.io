@@ -234,11 +234,21 @@ li {
 	display: none;
 }
 
+.brandlogo{
+	width: 5em;
+}
 .responsiveimage{
     display: none;
     cursor: pointer;
     width: 100%;
     margin: auto;
+}
+.logo {
+	margin: 3%;
+	width: 94%;
+}
+.aboutwrapper .logo{
+	width: 30%;
 }
 
 #logo {
