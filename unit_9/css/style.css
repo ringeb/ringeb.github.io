@@ -1,0 +1,401 @@
+* {
+	border: 0;
+	box-sizing:border-box;
+	font-size: 100%;
+	font: inherit;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+body{
+	background-color: #FFF;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+header{
+	width: 100%;
+}
+
+h1 { 
+	color: #fff;
+	font-family: "Playfair Display",'Times New Roman', Times, Serif;
+	font-size: 10vw;
+	font-weight: 100;
+	margin: auto;
+	padding: 10% 10%;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+h2 {
+	color: #000;
+	font-family: "Raleway"; san-serif;
+	font-feature-settings: "'liga' 1";
+	font-size: 2em;
+	font-weight: 400;
+	letter-spacing: 0em;
+	line-height: 1.33em;
+	margin:auto;
+	padding: 15px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: none;
+	word-spacing: -0.1em;
+}
+
+h3 {
+	color: #000;
+	display: inline-block;
+	font-family: "Raleway";
+	font-feature-settings: "'liga' 1";
+	font-size: 1.5em;
+	font-weight: 400;
+	letter-spacing: 0em;
+	line-height: 1em;
+	margin: auto;
+	top-padding: 1.5%;
+	text-align: center;
+	text-decoration: none;
+	text-transform: none;
+	word-spacing: -0.1em;
+}
+p {
+	font-family: georgia Serif;
+	padding: 5px 0px;
+}
+
+nav { 
+	display: inline;
+	padding:10px;
+ }
+
+a:link{ 
+	color: #000;
+	text-decoration: none; 
+	}
+
+a:visited{  
+	color: #000;
+	text-decoration: none; 
+	}
+
+a:hover{ 
+	color: #FF5339;
+	text-decoration: none; 
+	}
+
+a:active { 
+	color: #FF5339;
+	text-decoration: none; 
+	}
+
+footer {
+	background-color: #fff;
+	color: #000;
+	font-size: 1em;
+	line-height: 1.33em;
+	padding: 15px;
+	text-align: center;
+	width: 100%;
+}
+
+
+label {
+	background-color: #fff;
+	cursor: pointer;
+	color: #000;
+	display: block;
+	font-family: "Raleway"; 
+	font-feature-settings: "'liga' 1";
+	font-size: 1.2em;
+	font-style: normal;
+	line-height: 1.33em;
+	word-spacing: -0.1em;
+	margin-left: 5%;
+}
+
+li {
+	list-style-type: none;
+	padding: 5px;
+
+}
+
+.name { 
+	font-family: "semplicitapro", helvetica, sans-serif;
+	font-size: .9em;
+	 }
+
+.col1 {
+	background-color: #fff;
+	box-shadow: -1px 1px 3px #A7ABBA;
+	display: inline-block;
+	float: left;
+	margin: .5%;
+    width: 32.3%;
+    position: relative;
+}
+
+.col2 {
+	background-color: #fff;
+	float: left;
+	margin: .2%;
+	padding: 17px 5px 15px 5px ;
+	width: 32.33%;
+}
+.col3 {
+	background-color: #fff;
+	box-shadow: -1px 1px 3px #A7ABBA;
+	float: left;
+	margin: .5%;
+    width: 32.3%;
+    position: relative;
+}
+
+.col4 {
+	background-color: #fff;
+	float: left;
+	margin: .2%;
+	padding: 17px 5px 15px 5px ;
+	width: 32.33%;
+}
+
+.col1:hover{
+	box-shadow: -3px 3px 10px rgba(0,0,0,.25);
+	transform: rotate(-.2deg);
+}
+
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.aside{
+  	width: 100%;
+  	}
+
+.projectimage{
+    cursor: pointer;
+    width: 95%;
+    padding: 13px 0px 0px 13px;
+  	-moz-filter: saturate(100%);
+  	-webkit-filter: saturate(100%);
+  	-o-filter: saturate(100%);
+  	-ms-filter: saturate(100%);
+  	filter: saturate(100%);
+}
+
+.projectimage:hover {
+  	-moz-filter: saturate(105%);
+  	-webkit-filter: saturate(105%);
+  	-o-filter: saturate(105%);
+  	-ms-filter: saturate(105%);
+  	filter: saturate(105%);
+}
+.imagewrapper{
+}
+
+ .thoughts{
+ 	background-color: gold;
+ 	bottom-margin: 20px;
+ 	box-shadow: -1px 1px 3px #A7ABBA;
+ 	color: #000;
+ 	font-size: 1em;
+ 	height: 300px;
+ 	padding: 20px;
+ 	overflow: auto
+ }
+
+ .thoughts:hover {
+  	box-shadow: -3px 3px 10px rgba(0,0,0,.25);
+	transform: rotate(-.2deg);
+}
+
+.overlay{
+	padding-left: 17px;
+	position: relative;
+	margin-bottom: 3%;
+
+}
+.columntext {
+	padding-left: 17px;
+	position: relative;
+	margin-bottom: 3%
+}
+
+.responsive {
+	display: none;
+}
+
+.brandlogo{
+	margin-top: 10px;
+	width: 2em;
+}
+.responsiveimage{
+    display: none;
+    cursor: pointer;
+    width: 100%;
+    margin: auto;
+}
+.logo {
+	margin: 3%;
+	width: 94%;
+}
+.footerbar{
+	background-color: #000;
+	height: 3px;
+	margin-top: 40px;
+}
+.aboutwrapper .logo{
+	width: 30%;
+}
+
+#logo {
+	margin: 3%;
+	width: 94%;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu {
+  	background-color: #fff;
+	border-left: .5px solid #EFEFEF;
+	color: #000;
+	font-family: "Raleway"; 
+	font-feature-settings: "'liga' 1";
+	font-size: 1.2em;
+	font-style: normal;
+	line-height: 1.33em;
+	display: none;
+	padding: 10px;
+	margin-left: 5%;
+}
+
+#menu-toggle:checked + #menu {
+  display: block;
+}
+
+#splash {
+	background-color: #000;
+	background-attachment:fixed;
+	background-image: no-repeat;
+	background-size: cover;
+	box-shadow: -3px 3px 10px #A7ABBA;
+	margin: 5px auto 15px;
+	padding: 20px;
+}
+
+#mainwrapper {
+	margin: auto;
+	width: 100%;
+}
+
+#subwrapper {
+	max-width: 1080px;
+	margin: auto;
+}
+
+ #projectswrapper {
+ 	background-color: #fff;
+ 	box-shadow: -1px 1px 3px #A7ABBA;
+ 	margin: 0 auto 1%;
+ 	padding: 2.1%;
+ 	position: relative;
+ }
+
+#researchwrapper {
+ 	background-color: #fff;
+ 	box-shadow: -1px 1px 3px #A7ABBA;
+ 	margin: 0 auto 1%;
+ 	padding: 2.1%;
+ 	position: relative;
+ 	clear: both;
+ }
+
+ #thoughtswrapper{
+ 	background-color: #fff;
+ 	box-shadow: -1px 1px 3px #A7ABBA;
+ 	margin: 0 auto 1%;
+ 	padding: 2.1%;
+ 	position: relative;
+ }
+
+@media only screen and (max-width: 900px) {
+	
+	label{
+		font-size: 1.2em;
+	}
+	.overlay p {
+		display: none;
+	}
+	.col4 {
+	width:  45%;
+	}
+	.columntext p {
+		display: none;
+	}
+	#menu {
+		font-size: 1.2em;
+	}
+}
+
+ @media only screen and (max-width:600px) {
+
+body{
+ font-size:18px;
+}
+.col1 {
+	display: none;
+}
+.col2 {
+	display: none;
+}
+.col3 {
+	float: none;
+	width: 100%;
+}
+.col4 {
+	float: none;
+	width: 100%;
+}
+.responsive {
+	display: block;
+}
+.aboutwrapper .logo{
+	width: 60%;
+}
+.responsiveimage {
+	display: block;
+}
+.overlay {
+	display: none;
+}
+.columntext p {
+	display: block;
+}
+.imagewrapper {
+	padding: none;
+}
+.projectimage {
+	width: 96%;
+	margin-bottom: 10px;
+}
+#projectswrapper{
+	padding: 3%;
+}
+#researchwrapper{
+	padding: 3%;
+}
+#thoughtswrapper{
+	padding: 3%;
+}
+}
