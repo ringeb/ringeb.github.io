@@ -235,7 +235,8 @@ li {
 }
 
 .brandlogo{
-	width: 5em;
+	margin-top: 10px;
+	width: 2em;
 }
 .responsiveimage{
     display: none;
@@ -246,6 +247,11 @@ li {
 .logo {
 	margin: 3%;
 	width: 94%;
+}
+.footerbar{
+	background-color: #000;
+	height: 3px;
+	margin-top: 40px;
 }
 .aboutwrapper .logo{
 	width: 30%;
@@ -363,6 +369,9 @@ body{
 }
 .responsive {
 	display: block;
+}
+.aboutwrapper .logo{
+	width: 60%;
 }
 .responsiveimage {
 	display: block;
