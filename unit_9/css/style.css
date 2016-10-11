@@ -161,7 +161,7 @@ li {
 	background-color: #fff;
 	float: left;
 	margin: .2%;
-	padding: 17px 5px 15px 5px ;
+	padding: 17px 5px 15px 5px;
 	width: 32.33%;
 }
 
@@ -352,6 +352,12 @@ li {
 	.col4 {
 	width:  45%;
 	}
+	.clearfix .thoughts {
+	max-height: 225px;
+	}
+	.clearfix .col4{
+	width: 32.33%;
+	}
 	.columntext p {
 		display: none;
 	}
@@ -379,6 +385,12 @@ body{
 	float: none;
 	width: 100%;
 }
+.clearfix .col4{
+	width: 100%;
+}
+.clearfix .thoughts {
+	max-height: none;
+	}
 .responsive {
 	display: block;
 }
