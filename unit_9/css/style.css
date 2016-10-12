@@ -120,10 +120,35 @@ label {
 
 li {
 	list-style-type: none;
-	padding: 5px;
-
+	padding: 5px; 
 }
 
+div #mc_embed_signup_scroll {
+	background-color: #fff;
+	cursor: none;
+	color: #000;
+	display: block;
+	font-family: "Raleway"; 
+	font-size: 1.2em;
+	font-style: normal;
+	line-height: 2em;
+	word-spacing: -0.1em;
+	margin: none;
+} 
+#mc_embed_signup_scroll label {
+	margin-left: 0px;
+}
+
+.button {
+	background-color: #000;
+	color: #fff;
+	padding: 10px;
+	margin: 10px 0px;
+}
+
+.email{
+	padding: 10px;
+}
 .name { 
 	font-family: "semplicitapro", helvetica, sans-serif;
 	font-size: .9em;
