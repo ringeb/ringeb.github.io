@@ -225,4 +225,7 @@ form {
 	border-style: solid;
 	border-color: #000;
 }
+#map {
+        height: 100%;
+      }
 

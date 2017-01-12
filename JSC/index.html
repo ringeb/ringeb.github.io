@@ -29,12 +29,12 @@
 							<h4>Reserve Your Spot</h4>
 								<form >
 								    <input type="name" placeholder="Name">
-								    <input id="month" type="text" placeholder="Month">
+								    <input id="month" class="reservation-month" type="text" placeholder="Month">
 								    <button>Confirm Reservation</button>
 								</form>
 								<form class="form-inline reservation-form">
 							      <div class="form-group">
-							        <input type="text" class="form-control reservation-name" placeholder="Jane Doe">
+							        <input type="text" class="form-control reservation-form" placeholder="Jane Doe">
 							      </div>
 							      <div class="form-group">
 							        <div class="dropdown">
@@ -49,7 +49,7 @@
 							          </ul>
 							        </div>
 							      </div>
-							      <button class="btn btn-default reservation-button">Set Reservation</button>
+							      <button class="btn btn-default reservations">Set Reservation</button>
 							    </form>
 							</figure>
 						<figure class="clearfix" id="exres">
@@ -105,10 +105,14 @@
 	<!-- Type -->
 	<script src="https://use.typekit.net/nti7kpo.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	 	 <!-- JavaScript -->
+	<script type="text/javascript" href="js/main.js"></script>
+	<script src="js/jquery-3.0.0.js"></script>
+	
+	<!-- Maps-->
+	<script  async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH4MfS9pkDfdhZRafMnA4YEDNXEao5SV4&callback=initMap"></script>
 	<!-- Firebase CDN -->
   	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
  	 <script src="js/handlebars-v4.0.5.js"></script>
- 	 <!-- JavaScript -->
-	<script src="js/jquery-3.0.0.js"></script>
-	<script type="text/javascript" href="js/script.js"></script>
+
 </html>

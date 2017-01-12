@@ -75,3 +75,29 @@ function getReservations() {
 
 // When page loads, get reservations
 getReservations();
+
+// initialize the configuration of map
+function initMap() {
+  // use JS's built-in Navigator to get user's lat/lng coordinates
+  navigator.geolocation.getCurrentPosition(function(position) {
+    // create an object to store lat/lng data
+    var userLocation = {
+      lat: position.coords.latitude,
+      lng: position.coords.longitude
+    };
+    
+var map = new google.maps.Map(document.getElementById('map'), {
+  center: userLocation,
+    zoom: 10,
+    scrollwheel: false
+});
+    
+    var marker = new google.maps.Marker({
+    position: {lat: 40.8054491, lng: -73.9654415},
+    map: map,
+    title: 'Monks Café'
+  	});
+  });
+}
+
+initMap();
