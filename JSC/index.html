@@ -27,11 +27,6 @@
 					<h3>Reservations</h3>
 						<figure class="clearfix" id="res">
 							<h4>Reserve Your Spot</h4>
-								<form >
-								    <input type="name" placeholder="Name">
-								    <input id="month" class="reservation-month" type="text" placeholder="Month">
-								    <button>Confirm Reservation</button>
-								</form>
 								<form class="form-inline reservation-form">
 							      <div class="form-group">
 							        <input type="text" class="form-control reservation-form" placeholder="Jane Doe">
@@ -39,28 +34,36 @@
 							      <div class="form-group">
 							        <div class="dropdown">
 							          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-							            Select A Day
-							            <span class="caret"></span>
+							            Select A Month
 							          </button>
-							          <ul class="dropdown-menu reservation-day">
-							            <li><a>Today</a></li>
-							            <li><a>Tomorrow</a></li>
-							            <li><a>The day after next</a></li>
+							          <ul class="dropdown-menu reservation-month">
+							            <li><a>January</a></li>
+							            <li><a>February</a></li>
+							            <li><a>March</a></li>
+							            <li><a>April</a></li>
+							            <li><a>May</a></li>
+							            <li><a>June</a></li>
+							            <li><a>July</a></li>
+							            <li><a>August</a></li>
+							            <li><a>September</a></li>
+							            <li><a>October</a></li>
+							            <li><a>November</a></li>
+							            <li><a>December</a></li>
 							          </ul>
 							        </div>
 							      </div>
 							      <button class="btn btn-default reservations">Set Reservation</button>
 							    </form>
 							</figure>
-						<figure class="clearfix" id="exres">
+						<figure class="clearfix" id="reservation-template">
 							<h4>Existing Reservations</h4>
-								<table>
-									<thead>
-										<th>Column Header 1</th>
-										<th>Column Header 2</th>
-										</thead>
-										<tbody id="formdata"> [ form data will publish here ] </tbody>
-								</table>
+							<table>	
+								<thead>
+									<th>Name</th>
+									<th>Day</th>
+								</thead>
+								<tbody class="reservation-list"></tbody>
+							</table>
 						</figure>
 				</section>	
 				<section class="clearfix" id="projectswrapper">
@@ -106,7 +109,7 @@
 	<script src="https://use.typekit.net/nti7kpo.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	 	 <!-- JavaScript -->
-	<script type="text/javascript" href="js/main.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 	<script src="js/jquery-3.0.0.js"></script>
 	
 	<!-- Maps-->

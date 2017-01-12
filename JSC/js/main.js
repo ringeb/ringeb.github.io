@@ -1,4 +1,5 @@
 
+  var reservationData = {};
   var config = {
     apiKey: "AIzaSyDGov3vh2Qs1-aYeeIW6qqj-_rkKp3pXR8",
     authDomain: "reservation-site-38066.firebaseapp.com",
@@ -11,70 +12,45 @@
 
 var database = firebase.database();
 
-var reservationData = {};
 
-$('.reservation-month li').on('click', function() {
-  reservationData.month = $(this).text();
+
+// set the month when an option is clicked on
+$('.reservation-month li').click(function() {
+  reservationData.day = $(this).text();
 });
 
-// when submitted, the name data should be set
+// when clicked, the name data should be set
 // and all data should be sent to your database
-$('.reservation-form').on('submit', function(event) {
+$('.reservations').on('submit', function(event) {
+  // prevent reloading
   event.preventDefault();
 
+  // get name from input
   reservationData.name = $('.reservation-name').val();
 
-
-  // create a section for reservations data in your db
-  var reservationsReference = database.ref('reservations');
-
-  reservationsReference.push(reservationData);
+  // push configured data object to database
+  database.ref('reservations').push(reservationData);
 });
 
 
-// retrieve reservations data when page loads and when reservations are added
-function getReservations() {
-
-  // use reference to database to listen for changes in reservations data
-  database.ref('reservations').on('value', function(results) {
-
-    // Get all reservations stored in the results we received back from Firebase
-    var allReservations = results.val();
-
-    // remove all list reservations from DOM before appending list reservations
-    $('.reservations').empty();
-
-    // iterate (loop) through all reservations coming from database call
-    for (var reservation in allReservations) {
-
-      // Create an object literal with the data we'll pass to Handlebars
-      var context = {
-        name: allReservations[reservation].name,
-        day: allReservations[reservation].day,
-        reservationId: reservation
-      };
+// on initial load and addition of each reservation update the view
+database.ref('reservations').on('child_added', function(snapshot) {
+  // grab element to hook to
+  var reservationList = $('.reservation-list');
+  // get data from database
+  var reservations = snapshot.val();
+  // get your template from your script tag
+  var source   = $("#reservation-template").html();
+  // compile template
+  var template = Handlebars.compile(source);
+  // pass data to template to be evaluated within handlebars
+  // as the template is created
+  var reservationTemplate = template(reservations);
+  // append created templated
+  reservationList.append(reservationTemplate);
+});
 
 
-      // Get the HTML from our Handlebars reservation template
-      var source = $("#reservation-template").html();
-
-      // Compile our Handlebars template
-      var template = Handlebars.compile(source);
-
-      // Pass the data for this reservation (context) into the template
-      var reservationListItem = template(context);
-
-      // Append newly created reservation to reservations list.
-      $('.reservations').append(reservationListItem);
-
-    }
-
-  });
-
-}
-
-// When page loads, get reservations
-getReservations();
 
 // initialize the configuration of map
 function initMap() {
@@ -88,7 +64,7 @@ function initMap() {
     
 var map = new google.maps.Map(document.getElementById('map'), {
   center: userLocation,
-    zoom: 10,
+    zoom: 4,
     scrollwheel: false
 });
     

@@ -13,6 +13,7 @@ body{
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
+	height: 100%;
 }
 header{
 	width: 100%;
@@ -74,7 +75,7 @@ h4 {
 	text-align: center;
 	word-spacing: -0.1em;
 }
-p {
+p th {
 	font-family: "Raleway";
 	font-size: .9em;
 	padding: 5px 0px;
@@ -197,7 +198,7 @@ form {
  	padding: 2%;
  	width: 48%;
  }
- #exres {
+ #reservation-template {
  	box-shadow: -1px 1px 3px #A7ABBA;
  	float: left;
  	margin: 0 2%;
@@ -227,5 +228,5 @@ form {
 }
 #map {
         height: 100%;
-      }
+ }
 
