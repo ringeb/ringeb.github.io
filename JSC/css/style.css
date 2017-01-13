@@ -16,7 +16,8 @@ body{
 	height: 100%;
 }
 header{
-	width: 100%;
+	width: 100%
+	max-width: 1080px;
 }
 input {
   margin: 10px auto;
@@ -29,7 +30,7 @@ input {
 h1 { 
 	color: #000;
 	font-family: "Playfair Display",'Times New Roman', Times, Serif;
-	font-size: 10vw;
+	font-size: 6em;
 	font-weight: 100;
 	margin: auto;
 	text-align: center;
@@ -120,7 +121,10 @@ footer {
 	width: 100%;
 }
 img {
+	margin: auto;
 	width: 100%;
+	max-width: 1080px;
+    display: block;
 }
 
 label {
@@ -211,6 +215,7 @@ form {
 	clear: both;
 	height: 0;
 }
+
 #mainwrapper {
 	margin: auto;
 	width: 100%;
@@ -271,6 +276,7 @@ form {
  	padding: 2%;
  	width: 48%;
  }
+
   #review {
  	box-shadow: -1px 1px 3px #A7ABBA;
  	float: left;
@@ -285,13 +291,6 @@ form {
  	width: 48%;
  }
 
-#logo {
-	margin: auto;
-	z-index: 0;
-	padding: 0 10%;
-	border-style: solid;
-	border-color: #000;
-}
 #map {
         height: 100%;
  }
