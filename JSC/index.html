@@ -32,27 +32,23 @@
 							        <input type="text" class="form-control reservation-form" placeholder="Jane Doe">
 							      </div>
 							      <div class="form-group">
-							        <div class="dropdown">
-							          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-							            Select A Month
-							          </button>
-							          <ul class="dropdown-menu reservation-month">
-							            <li><a>January</a></li>
-							            <li><a>February</a></li>
-							            <li><a>March</a></li>
-							            <li><a>April</a></li>
-							            <li><a>May</a></li>
-							            <li><a>June</a></li>
-							            <li><a>July</a></li>
-							            <li><a>August</a></li>
-							            <li><a>September</a></li>
-							            <li><a>October</a></li>
-							            <li><a>November</a></li>
-							            <li><a>December</a></li>
-							          </ul>
-							        </div>
+							        <input type="text" class="form-control reservation-form" placeholder="Email">
 							      </div>
-							      <button class="btn btn-default reservations">Set Reservation</button>
+							          <select type="button" id="menu-toggle" class="reservation-month"> 
+							            <option><a>January</a></option>
+							            <option><a>February</a></option>
+							            <option><a>March</a></option>
+							            <option><a>April</a></option>
+							            <option><a>May</a></option>
+							            <option><a>June</a></option>
+							            <option><a>July</a></option>
+							            <option><a>August</a></option>
+							            <option><a>September</a></option>
+							            <option><a>October</a></option>
+							            <option><a>November</a></option>
+							            <option><a>December</a></option>
+							          </select>
+							      <button class="reservations">Set Reservation</button>
 							    </form>
 							</figure>
 						<figure class="clearfix" id="reservation-template">
@@ -68,9 +64,9 @@
 				</section>	
 				<section class="clearfix" id="projectswrapper">
 					<h3>Join Us</h3>
-					 <div class="container-fluid restaurant-locator">
+					 <div class="restaurant-locator">
          				<div class="row">
-            				<div id="map" class="col-md-12" style="height:100vh"></div>
+            				<div id="map" style="height:100vh"></div>
         			 	</div>
      				 </div>
 				</section>	
@@ -80,7 +76,7 @@
 						<h4>Tell the world about your experience</h4>
 								<form >
 								    <input type="name" placeholder="Name">
-								    <input id="Comment" type="text" placeholder="Comment">
+								    <textarea id="Comment" type="text" placeholder="Comment" cols="40" rows="5"></textarea>
 								    <button>Comment</button>
 								</form>
 					</figure>

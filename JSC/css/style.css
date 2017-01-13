@@ -140,17 +140,53 @@ li {
 	list-style-type: none;
 	padding: 5px; 
 }
-button {
-  font-family: "Raleway";  sans-serif;
+select {
+  border-radius: 0px;
+  font-family: "Raleway"; 
   font-size: 1em;
   position: relative;
-  z-index: 1;
+  display: block;
+  width: 300px;
+  height: 33px;
+  margin: 30px auto;
+  padding: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: -1px 1px 3px #A7ABBA;
+}
+button {
+  font-family: "Raleway"; 
+  font-size: 1em;
+  position: relative;
   display: block;
   width: 300px;
   margin: 30px auto;
   padding: 10px;
   cursor: pointer;
   text-transform: uppercase;
+  box-shadow: -1px 1px 3px #A7ABBA;
+}
+input {
+  font-family: "Raleway"; 
+  font-size: 1em;
+  position: relative;
+  display: block;
+  width: 300px;
+  margin: 30px auto;
+  padding: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: -1px 1px 3px #A7ABBA;
+}
+textarea {
+  font-family: "Raleway"; 
+  font-size: 1em;
+  position: relative;
+  display: block;
+  width: 300px;
+  margin: 30px auto;
+  padding: 10px;
+  cursor: pointer;
   box-shadow: -1px 1px 3px #A7ABBA;
 }
 form {
@@ -192,6 +228,36 @@ form {
  	padding: 2.1%;
  	position: relative;
  }
+ #menu-toggle {
+  display: block;
+}
+
+#reservation-month {
+  	background-color: #fff;
+	border-left: .5px solid #EFEFEF;
+	color: #000;
+	font-family: "Raleway"; 
+	font-feature-settings: "'liga' 1";
+	font-size: 1.2em;
+	font-style: normal;
+	line-height: 1em;
+	display: none;
+	padding: 10px;
+	margin-left: 5%;
+}
+
+#menu-toggle:click + #menu {
+  display: block;
+}
+
+#submenu{
+	font-size: .9em;
+	line-height: .9em;
+	padding-left: 20px;
+}
+#menu-toggle:checked + #submenu {
+  display: block;
+}
  #res {
  	box-shadow: -1px 1px 3px #A7ABBA;
  	float: left;

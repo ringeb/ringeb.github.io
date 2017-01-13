@@ -1,3 +1,18 @@
+$("#btn").click(function() {
+  "use strict";
+  $.fn.openSelect = function() {
+    return this.each(function(idx, domEl) {
+      if (document.createEvent) {
+        var event = document.createEvent("MouseEvents");
+        event.initMouseEvent("mousedown", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+        domEl.dispatchEvent(event);
+      } else if (element.fireEvent) {
+        domEl.fireEvent("onmousedown");
+      }
+    });
+  }
+  $("#menu-toggle").openSelect();
+});
 
   var reservationData = {};
   var config = {
@@ -64,12 +79,12 @@ function initMap() {
     
 var map = new google.maps.Map(document.getElementById('map'), {
   center: userLocation,
-    zoom: 4,
+    zoom: 11,
     scrollwheel: false
 });
     
     var marker = new google.maps.Marker({
-    position: {lat: 40.8054491, lng: -73.9654415},
+    position: {lat: 41.898126, lng: -87.677191},
     map: map,
     title: 'Monks Café'
   	});
