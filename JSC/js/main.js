@@ -1,5 +1,4 @@
-//
-  var reservationData = {};
+
   var config = {
     apiKey: "AIzaSyDGov3vh2Qs1-aYeeIW6qqj-_rkKp3pXR8",
     authDomain: "reservation-site-38066.firebaseapp.com",
@@ -8,6 +7,67 @@
     messagingSenderId: "321397700598"
   };
   firebase.initializeApp(config);
+//reservation section
+var database = firebase.database();
+$('#reservation-form').on('submit', function (e) {
+  // by default a form submit reloads the DOM which will subsequently reload all our JS
+  e.preventDefault();
+
+ // grab user's comment from input field
+  var userEmail = $('#reservation-email').val();
+  // clear the user's comment from the input (for UX purposes)
+  $('#reservation-email').val('')
+
+  var userName = $('#reservation-name').val();
+  // clear the user's name from the input (for UX purposes)
+  $('#reservation-name').val('') 
+
+  var userMonth = $('#reservation-month').val();
+  // clear the user's name from the input (for UX purposes)
+  $('#reservation-month').val('') 
+
+  // create a section for reservations data in your db
+  var reservationReference = database.ref('reservations');
+  // use the set method to save data to the comments
+  reservationReference.push({
+    name: userName,
+    email: userEmail,
+    month: userMonth,
+  });
+});
+
+function getReservation() {
+// on initial load and addition of each reservation update the view
+database.ref('reservations').on('value', function(results) {
+  // grab element to hook to
+var allReservations = results.val();
+    var reservations = [];
+    for (var item in allReservations) {
+      var context = {
+        name: allReservations[item].name,
+        email: allReservations[item].reservation,
+        month: allReservations[item].month,
+        reservationId: item
+      };
+      // Get the HTML from our Handlebars comment template
+      var source = $("#reservation-template").html();
+      // Compile our Handlebars template
+      var template = Handlebars.compile(source);
+      // Pass the data for this comment (context) into the template
+      var reservationListElement = template(context);
+      // push newly created element to array of comments
+      reservations.push(reservationListElement)
+    }
+    // Update the DOM
+    $('.reservations').empty()
+    // append each comment to the list of comments in the DOM
+    for (var i in reservations) {
+      $('.reservations').append(reservations[i])
+    }
+  });
+}  
+
+getReservation()
 
 //comment section
 var database = firebase.database();
@@ -63,82 +123,7 @@ function getComments() {
 
 getComments();
 
-//reservation section
 
-$('#reservation-form').on('submit', function (e) {
-  // by default a form submit reloads the DOM which will subsequently reload all our JS
-  e.preventDefault();
-  // to avoid this we preventDefault()
-
- // grab user's comment from input field
-  var userEmail = $('#reservation-email').val();
-  // clear the user's comment from the input (for UX purposes)
-  $('#reservation-email').val('')
-
-  var userName = $('#reservation-name').val();
-  // clear the user's name from the input (for UX purposes)
-  $('#reservation-name').val('') 
-
-  var userMonth = $('#reservation-month').val();
-  // clear the user's name from the input (for UX purposes)
-  $('#reservation-month').val('') 
-
-  // create a section for reservations data in your db
-  var reservationReference = database.ref('reservations');
-  // use the set method to save data to the comments
-  reservationReference.push({
-    comment: userInput,
-    name: userName,
-  });
-});
-
-// set the month when an option is clicked on
-$('.reservation-month li').click(function() {
-  reservationData.day = $(this).text();
-});
-// when clicked, the name data should be set
-// and all data should be sent to your database
-$('.reservations').on('submit', function(event) {
-  // prevent reloading
-  event.preventDefault();
-
-  // get name from input
-  reservationData.name = $('.reservation-name').val();
-
-  // push configured data object to database
-  database.ref('reservations').push(reservationData);
-});
-
-function getReservation() {
-// on initial load and addition of each reservation update the view
-database.ref('reservations').on('value', function(results) {
-  // grab element to hook to
-var allReservations = results.val();
-    var reservations = [];
-    for (var item in allReservations) {
-      var context = {
-        name: allComments[item].name,
-        comment: allComments[item].comment,
-        commentId: item
-      };
-      // Get the HTML from our Handlebars comment template
-      var source = $("#reservation-template").html();
-      // Compile our Handlebars template
-      var template = Handlebars.compile(source);
-      // Pass the data for this comment (context) into the template
-      var reservationListElement = template(context);
-      // push newly created element to array of comments
-      comments.push(ListElement)
-    }
-    // Update the DOM
-    $('.reservations').empty()
-    // append each comment to the list of comments in the DOM
-    for (var i in comments) {
-      $('.reservations').append(comments[i])
-    }
-  });
-}  
-getReservation()
 
 
 //month selector
