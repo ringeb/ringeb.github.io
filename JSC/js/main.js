@@ -9,13 +9,6 @@
   };
   firebase.initializeApp(config);
 
-
-var database = firebase.database();
-
-
-
-
-
 //comment section
 var database = firebase.database();
 $('#comment-form').on('submit', function (e) {
@@ -70,8 +63,8 @@ function getComments() {
 
 getComments();
 
-//comment section
-var database = firebase.database();
+//reservation section
+
 $('#reservation-form').on('submit', function (e) {
   // by default a form submit reloads the DOM which will subsequently reload all our JS
   e.preventDefault();
@@ -80,17 +73,17 @@ $('#reservation-form').on('submit', function (e) {
  // grab user's comment from input field
   var userEmail = $('#reservation-email').val();
   // clear the user's comment from the input (for UX purposes)
-  $('#comment').val('')
+  $('#reservation-email').val('')
 
   var userName = $('#reservation-name').val();
   // clear the user's name from the input (for UX purposes)
-  $('#comment-name').val('') 
+  $('#reservation-name').val('') 
 
   var userMonth = $('#reservation-month').val();
   // clear the user's name from the input (for UX purposes)
-  $('#comment-name').val('') 
+  $('#reservation-month').val('') 
 
-  // create a section for comments data in your db
+  // create a section for reservations data in your db
   var reservationReference = database.ref('reservations');
   // use the set method to save data to the comments
   reservationReference.push({
