@@ -1,19 +1,4 @@
-$("#btn").click(function() {
-  "use strict";
-  $.fn.openSelect = function() {
-    return this.each(function(idx, domEl) {
-      if (document.createEvent) {
-        var event = document.createEvent("MouseEvents");
-        event.initMouseEvent("mousedown", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-        domEl.dispatchEvent(event);
-      } else if (element.fireEvent) {
-        domEl.fireEvent("onmousedown");
-      }
-    });
-  }
-  $("#menu-toggle").openSelect();
-});
-
+//
   var reservationData = {};
   var config = {
     apiKey: "AIzaSyDGov3vh2Qs1-aYeeIW6qqj-_rkKp3pXR8",
@@ -29,11 +14,95 @@ var database = firebase.database();
 
 
 
+
+
+//comment section
+var database = firebase.database();
+$('#comment-form').on('submit', function (e) {
+  // by default a form submit reloads the DOM which will subsequently reload all our JS
+  e.preventDefault();
+  // to avoid this we preventDefault()
+
+ // grab user's comment from input field
+  var userInput = $('#comment').val();
+  // clear the user's comment from the input (for UX purposes)
+  $('#comment').val('')
+
+  var userName = $('#comment-name').val();
+  // clear the user's name from the input (for UX purposes)
+  $('#comment-name').val('') 
+  // create a section for comments data in your db
+  var commentsReference = database.ref('comments');
+  // use the set method to save data to the comments
+  commentsReference.push({
+    comment: userInput,
+    name: userName,
+  });
+});
+
+function getComments() {
+  database.ref('comments').on('value', function (results) {
+    var allComments = results.val();
+    var comments = [];
+    for (var item in allComments) {
+      var context = {
+        name: allComments[item].name,
+        comment: allComments[item].comment,
+        commentId: item
+      };
+      // Get the HTML from our Handlebars comment template
+      var source = $("#comment-template").html();
+      // Compile our Handlebars template
+      var template = Handlebars.compile(source);
+      // Pass the data for this comment (context) into the template
+      var commentListElement = template(context);
+      // push newly created element to array of comments
+      comments.push(commentListElement)
+    }
+    // Update the DOM
+    $('.comments').empty()
+    // append each comment to the list of comments in the DOM
+    for (var i in comments) {
+      $('.comments').append(comments[i])
+    }
+  });
+}
+
+getComments();
+
+//comment section
+var database = firebase.database();
+$('#reservation-form').on('submit', function (e) {
+  // by default a form submit reloads the DOM which will subsequently reload all our JS
+  e.preventDefault();
+  // to avoid this we preventDefault()
+
+ // grab user's comment from input field
+  var userEmail = $('#reservation-email').val();
+  // clear the user's comment from the input (for UX purposes)
+  $('#comment').val('')
+
+  var userName = $('#reservation-name').val();
+  // clear the user's name from the input (for UX purposes)
+  $('#comment-name').val('') 
+
+  var userMonth = $('#reservation-month').val();
+  // clear the user's name from the input (for UX purposes)
+  $('#comment-name').val('') 
+
+  // create a section for comments data in your db
+  var reservationReference = database.ref('reservations');
+  // use the set method to save data to the comments
+  reservationReference.push({
+    comment: userInput,
+    name: userName,
+  });
+});
+
 // set the month when an option is clicked on
 $('.reservation-month li').click(function() {
   reservationData.day = $(this).text();
 });
-
 // when clicked, the name data should be set
 // and all data should be sent to your database
 $('.reservations').on('submit', function(event) {
@@ -47,25 +116,55 @@ $('.reservations').on('submit', function(event) {
   database.ref('reservations').push(reservationData);
 });
 
-
+function getReservation() {
 // on initial load and addition of each reservation update the view
-database.ref('reservations').on('child_added', function(snapshot) {
+database.ref('reservations').on('value', function(results) {
   // grab element to hook to
-  var reservationList = $('.reservation-list');
-  // get data from database
-  var reservations = snapshot.val();
-  // get your template from your script tag
-  var source   = $("#reservation-template").html();
-  // compile template
-  var template = Handlebars.compile(source);
-  // pass data to template to be evaluated within handlebars
-  // as the template is created
-  var reservationTemplate = template(reservations);
-  // append created templated
-  reservationList.append(reservationTemplate);
+var allReservations = results.val();
+    var reservations = [];
+    for (var item in allReservations) {
+      var context = {
+        name: allComments[item].name,
+        comment: allComments[item].comment,
+        commentId: item
+      };
+      // Get the HTML from our Handlebars comment template
+      var source = $("#reservation-template").html();
+      // Compile our Handlebars template
+      var template = Handlebars.compile(source);
+      // Pass the data for this comment (context) into the template
+      var reservationListElement = template(context);
+      // push newly created element to array of comments
+      comments.push(ListElement)
+    }
+    // Update the DOM
+    $('.reservations').empty()
+    // append each comment to the list of comments in the DOM
+    for (var i in comments) {
+      $('.reservations').append(comments[i])
+    }
+  });
+}  
+getReservation()
+
+
+//month selector
+$("#btn").click(function() {
+  "use strict";
+  $.fn.openSelect = function() {
+    return this.each(function(idx, domEl) {
+      if (document.createEvent) {
+        var event = document.createEvent("MouseEvents");
+        event.initMouseEvent("mousedown", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+        domEl.dispatchEvent(event);
+      } else if (element.fireEvent) {
+        domEl.fireEvent("onmousedown");
+      }
+    });
+  }
+  $("#menu-toggle").openSelect();
+
 });
-
-
 
 // initialize the configuration of map
 function initMap() {
@@ -86,9 +185,10 @@ var map = new google.maps.Map(document.getElementById('map'), {
     var marker = new google.maps.Marker({
     position: {lat: 41.898126, lng: -87.677191},
     map: map,
-    title: 'Monks Café'
+    title: 'Fernwey'
   	});
   });
 }
+
 
 initMap();

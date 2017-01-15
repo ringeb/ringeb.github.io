@@ -27,13 +27,9 @@
 					<h3>Reservations</h3>
 						<figure class="clearfix" id="res">
 							<h4>Reserve Your Spot</h4>
-								<form class="form-inline reservation-form">
-							      <div class="form-group">
-							        <input type="text" class="form-control reservation-form" placeholder="Jane Doe">
-							      </div>
-							      <div class="form-group">
-							        <input type="text" class="form-control reservation-form" placeholder="Email">
-							      </div>
+								<form class="reservation-form">
+							        <input type="text" class="reservation-name" placeholder="Jane Doe">
+							        <input type="text" class="reservation-email" placeholder="Email">
 							          <select type="button" id="menu-toggle" class="reservation-month"> 
 							            <option><a>January</a></option>
 							            <option><a>February</a></option>
@@ -48,11 +44,22 @@
 							            <option><a>November</a></option>
 							            <option><a>December</a></option>
 							          </select>
-							      <button class="reservations">Set Reservation</button>
+							    <input type="submit" value="Set Reservation">
 							    </form>
 							</figure>
 						<figure class="clearfix" id="reservation-template">
 							<h4>Existing Reservations</h4>
+							<figure>
+						<ul class="reservations">
+						</ul>
+						<script id="reservation-template" type="text/x-handlebars-template">
+						  <li data-id="{{reservationId}}">
+						    <p>{{name}}</p>
+						    <p>{{email}}</p>
+						    <p>{{month}}</p>
+						  </li>
+						</script>
+					</figure>
 							<table>	
 								<thead>
 									<th>Name</th>
@@ -72,24 +79,22 @@
 					<h3>Reviews</h3>
 					<figure class="clearfix" id="review">
 						<h4>Tell the world about your experience</h4>
-								<form >
-								    <input type="name" placeholder="Name">
-								    <textarea id="Comment" type="text" placeholder="Comment" cols="40" rows="5"></textarea>
-								    <button>Comment</button>
+								<form id="comment-form">
+								    <input id="comment-name" type="name" placeholder="Name">
+								    <textarea id="comment" type="text" placeholder="Leave a comment" cols="40" rows="5"></textarea>
+								    <input type="submit" value="Submit">
 								</form>
 					</figure>
-					<figure class="clearfix" id="reviewtxt">
-						<p>“Big lettuce, big carrots, tomatoes like volleyballs.” — Jerry Seinfeld, on The BIG Salad
-						</p>
-						<br>
-						<p>“Big lettuce, big carrots, tomatoes like volleyballs.” — Jerry Seinfeld, on The BIG Salad
-						</p>
-						<br>
-						<p>“Big lettuce, big carrots, tomatoes like volleyballs.” — Jerry Seinfeld, on The BIG Salad
-						</p>
-						<br>
-						<p>“Big lettuce, big carrots, tomatoes like volleyballs.” — Jerry Seinfeld, on The BIG Salad
-						</p>
+					<figure>
+						<ul class="comments">
+						<h4>Diner Reviews</h4>
+						</ul>
+						<script id="comment-template" type="text/x-handlebars-template">
+						  <li data-id="{{commentId}}">
+						    <p>{{name}}</p>
+						    <p>{{comment}}</p>
+						  </li>
+						</script>
 					</figure>
 				</section>	
 			</div>
@@ -100,14 +105,15 @@
 	<!-- Type -->
 	<script src="https://use.typekit.net/nti7kpo.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
-	 	 <!-- JavaScript -->
-	<script type="text/javascript" src="js/main.js"></script>
-	<script src="js/jquery-3.0.0.js"></script>
-	
-	<!-- Maps-->
-	<script  async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH4MfS9pkDfdhZRafMnA4YEDNXEao5SV4&callback=initMap"></script>
 	<!-- Firebase CDN -->
   	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
  	 <script src="js/handlebars-v4.0.5.js"></script>
+ 	 <script src="js/jquery-3.0.0.js"></script>
+	 	 <!-- JavaScript -->
+	<script type="text/javascript" src="js/main.js"></script>
+	
+	<!-- Maps-->
+	<script  async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH4MfS9pkDfdhZRafMnA4YEDNXEao5SV4&callback=initMap"></script>
+	
 
 </html>

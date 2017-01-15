@@ -283,7 +283,14 @@ form {
  	padding: 2%;
  	width: 48%;
  }
- #reviewtxt {
+ .comments {
+ 	font-family: "Raleway"; 
+	font-feature-settings: "'liga' 1";
+	font-size: 1em;
+	font-style: normal;
+	line-height: 1em;
+	padding: 10px;
+	margin-left: 5%;
  	box-shadow: -1px 1px 3px #A7ABBA;
  	float: left;
  	margin: 0 2%;
