@@ -30,7 +30,7 @@ input {
 h1 { 
 	color: #000;
 	font-family: "Playfair Display",'Times New Roman', Times, Serif;
-	font-size: 6em;
+	font-size: 5.4em;
 	font-weight: 100;
 	margin: auto;
 	text-align: center;
@@ -141,8 +141,7 @@ label {
 }
 
 li {
-	list-style-type: none;
-	padding: 5px; 
+	list-style-type: none; 
 }
 select {
   border-radius: 0px;
@@ -202,6 +201,7 @@ form {
     width: 3em;
     bottom: 550px;
     right: 0;
+    opacity: 0.8;
 }
 
 .clearfix:after{
@@ -300,7 +300,6 @@ form {
 	font-size: 1em;
 	font-style: normal;
 	line-height: 1em;
-	padding: 10px;
 	margin-left: 5%;
  	box-shadow: -1px 1px 3px #A7ABBA;
  	float: left;
@@ -322,10 +321,11 @@ figure{
 	margin: 12px auto;
 }
 h1{
-	font-size: 3em;
+	font-size: 2.6em;
 }
 .reservations {
 	width:98%;
+	display: block;
 }
 .comments {
 	width: 98%;
@@ -337,9 +337,6 @@ h1{
 	margin: 12px auto;
 }
 
-#reservation-template{
-	display: block;
-}
 #review{
 	width:98%;
 }

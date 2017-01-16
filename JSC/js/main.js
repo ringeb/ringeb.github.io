@@ -32,6 +32,7 @@ $('#reservation-form').on('submit', function (e) {
   reservationReference.push({
     name: userName,
     email: userEmail,
+    month: userMonth,
   });
 });
 
@@ -44,7 +45,7 @@ var allReservations = results.val();
     for (var item in allReservations) {
       var context = {
         name: allReservations[item].name,
-        email: allReservations[item].reservation,
+        email: allReservations[item].email,
         month: allReservations[item].month,
         reservationId: item
       };
