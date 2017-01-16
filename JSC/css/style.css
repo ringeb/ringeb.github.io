@@ -76,7 +76,7 @@ h4 {
 	text-align: center;
 	word-spacing: -0.1em;
 }
-p th {
+p {
 	font-family: "Raleway";
 	font-size: .9em;
 	padding: 5px 0px;
@@ -203,10 +203,7 @@ form {
     bottom: 550px;
     right: 0;
 }
-}
-#formdata {
-	box-shadow: -1px 1px 3px #A7ABBA;
-}
+
 .clearfix:after{
 	visibility: hidden;
 	display: block;
@@ -297,8 +294,56 @@ form {
  	padding: 2%;
  	width: 48%;
  }
+ .reservations{
+ 	font-family: "Raleway"; 
+	font-feature-settings: "'liga' 1";
+	font-size: 1em;
+	font-style: normal;
+	line-height: 1em;
+	padding: 10px;
+	margin-left: 5%;
+ 	box-shadow: -1px 1px 3px #A7ABBA;
+ 	float: left;
+ 	margin: 0 2%;
+ 	padding: 2%;
+ 	width: 48%;
+ }
 
 #map {
         height: 100%;
  }
 
+@media only screen and (max-width:700px) {
+
+body{
+ font-size:18px;
+}
+figure{
+	margin: 12px auto;
+}
+h1{
+	font-size: 3em;
+}
+.reservations {
+	width:98%;
+}
+.comments {
+	width: 98%;
+}
+#res{
+	width: 98%;
+}
+#projectswrapper{
+	margin: 12px auto;
+}
+
+#reservation-template{
+	display: block;
+}
+#review{
+	width:98%;
+}
+#review-section{
+	width: 98%;
+	display: block;
+}

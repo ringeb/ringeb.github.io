@@ -24,13 +24,17 @@
 					<p> Monthly Table is a supper club project by Ryan Ingebritson that uses food as a way to bring people together. Each month the menu is set and diners come to participate in a theme.</p>
 				</section>
 				<section class="clearfix" id="projectswrapper">
+					<h3>Themes</h3>
+					<p> January, February, March, April, May, June, July, August, September, October, November, December.</p>
+				</section>
+				<section class="clearfix" id="projectswrapper">
 					<h3>Reservations</h3>
 						<figure class="clearfix" id="res">
 							<h4>Reserve Your Spot</h4>
 							<form id="reservation-form">
 						        <input type="text" id="reservation-name" placeholder="Jane Doe">
 						        <input type="text" id="reservation-email" placeholder="Email">
-						          <select type="button" id="menu-toggle reservation-month"> 
+						         <!-- <select type="button" id="menu-toggle reservation-month"> 
 						            <option><a>January</a></option>
 						            <option><a>February</a></option>
 						            <option><a>March</a></option>
@@ -43,11 +47,11 @@
 						            <option><a>October</a></option>
 						            <option><a>November</a></option>
 						            <option><a>December</a></option>
-						          </select>
+						          </select> -->
 						    <input type="submit" value="Set Reservation">
 						    </form>
 						</figure>
-						<figure class="clearfix" id="reservation-template">
+						<figure class="clearfix">
 							<h4>Existing Reservations</h4>
 							<ul class="reservations">
 							</ul>
@@ -76,9 +80,9 @@
 								    <input type="submit" value="Submit">
 								</form>
 					</figure>
-					<figure>
-						<ul class="comments">
+					<figure id="review-section">
 						<h4>Diner Reviews</h4>
+						<ul class="comments">
 						</ul>
 						<script id="comment-template" type="text/x-handlebars-template">
 						  <li data-id="{{commentId}}">

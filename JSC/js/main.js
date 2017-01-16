@@ -32,7 +32,6 @@ $('#reservation-form').on('submit', function (e) {
   reservationReference.push({
     name: userName,
     email: userEmail,
-    month: userMonth,
   });
 });
 
