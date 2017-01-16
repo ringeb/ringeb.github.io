@@ -141,7 +141,12 @@ label {
 }
 
 li {
-	list-style-type: none; 
+	list-style-type: none;
+	margin: auto;
+	font-family: "Raleway";
+	font-size: .9em;
+	padding: 5px 0px;
+	text-align: center; 
 }
 select {
   border-radius: 0px;
