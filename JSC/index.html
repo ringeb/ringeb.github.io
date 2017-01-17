@@ -47,20 +47,20 @@
 							<form id="reservation-form">
 						        <input type="text" id="reservation-name" placeholder="Jane Doe">
 						        <input type="text" id="reservation-email" placeholder="Email">
-						         <!-- <select type="button" id="menu-toggle reservation-month"> 
-						            <option><a>January</a></option>
-						            <option><a>February</a></option>
-						            <option><a>March</a></option>
-						            <option><a>April</a></option>
-						            <option><a>May</a></option>
-						            <option><a>June</a></option>
-						            <option><a>July</a></option>
-						            <option><a>August</a></option>
-						            <option><a>September</a></option>
-						            <option><a>October</a></option>
-						            <option><a>November</a></option>
-						            <option><a>December</a></option>
-						          </select> -->
+						       <select type="select" id="reservation-month"> 
+						            <option><a>January - Italian</a></option>
+						            <option><a>February - Spanish</a></option>
+						            <option><a>March - French</a></option>
+						            <option><a>April - Thai</a></option>
+						            <option><a>May - Carribean</a></option>
+						            <option><a>June - Southern Barbecue</a></option>
+						            <option><a>July - Guest Chef</a></option>
+						            <option><a>August - Summer Harvest</a></option>
+						            <option><a>September - Persian</a></option>
+						            <option><a>October - Korean Street Food</a></option>
+						            <option><a>November - Soups and Sauces</a></option>
+						            <option><a>December - Jamaican Chinese</a></option>
+						          </select> 
 						    <input type="submit" value="Set Reservation">
 						    </form>
 						</figure>
@@ -70,8 +70,7 @@
 							</ul>
 								<script id="reservation-template" type="text/x-handlebars-template">
 								  <li data-id="{{reservationId}}">
-								    <p>{{name}}</p>
-								    <p>{{email}}</p>
+								    <p>{{name}} - {{email}}</p>
 								    <p>{{month}}</p>
 								  </li>
 								</script>
@@ -99,8 +98,7 @@
 						</ul>
 						<script id="comment-template" type="text/x-handlebars-template">
 						  <li data-id="{{commentId}}">
-						    <p>{{name}}</p>
-						    <p>{{comment}}</p>
+						    <p>{{name}} - "{{comment}}"</p>
 						  </li>
 						</script>
 					</figure>

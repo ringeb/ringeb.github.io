@@ -1,3 +1,7 @@
+$(function(){
+  $('body').css('display', 'none');
+  $('body').fadeIn(3000);
+});
 
   var config = {
     apiKey: "AIzaSyDGov3vh2Qs1-aYeeIW6qqj-_rkKp3pXR8",
@@ -15,7 +19,7 @@ $('#reservation-form').on('submit', function (e) {
 
  // grab user's comment from input field
   var userEmail = $('#reservation-email').val();
-  // clear the user's comment from the input (for UX purposes)
+  // clear the user's email from the input (for UX purposes)
   $('#reservation-email').val('')
 
   var userName = $('#reservation-name').val();
@@ -23,7 +27,7 @@ $('#reservation-form').on('submit', function (e) {
   $('#reservation-name').val('') 
 
   var userMonth = $('#reservation-month').val();
-  // clear the user's name from the input (for UX purposes)
+  // clear the selected month from the input (for UX purposes)
   $('#reservation-month').val('') 
 
   // create a section for reservations data in your db
@@ -126,23 +130,7 @@ getComments();
 
 
 
-//month selector
-$("#btn").click(function() {
-  "use strict";
-  $.fn.openSelect = function() {
-    return this.each(function(idx, domEl) {
-      if (document.createEvent) {
-        var event = document.createEvent("MouseEvents");
-        event.initMouseEvent("mousedown", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
-        domEl.dispatchEvent(event);
-      } else if (element.fireEvent) {
-        domEl.fireEvent("onmousedown");
-      }
-    });
-  }
-  $("#menu-toggle").openSelect();
 
-});
 
 // initialize the configuration of map
 function initMap() {
@@ -158,6 +146,7 @@ var map = new google.maps.Map(document.getElementById('map'), {
   center: {lat: 41.898126, lng: -87.677191},
     zoom: 11,
     scrollwheel: false
+
 });
     
     var marker = new google.maps.Marker({
