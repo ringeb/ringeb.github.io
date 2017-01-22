@@ -73,6 +73,7 @@ nav {
 	padding:10px;
  }
 
+
 a:link{ 
 	color: #000;
 	text-decoration: none; 
@@ -110,12 +111,14 @@ label {
 	color: #000;
 	display: block;
 	font-family: "Raleway"; 
-	font-feature-settings: "'liga' 1";
 	font-size: 1.2em;
 	font-style: normal;
 	line-height: 1.33em;
 	word-spacing: -0.1em;
 	margin-left: 5%;
+}
+label.sticky {
+	font-size: 90em;
 }
 
 li {

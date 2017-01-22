@@ -1,6 +1,11 @@
+$(function(){
+  $('body').css('display', 'none');
+  $('body').fadeIn(3000);
+});
+
 // create a clone of the menu, 
 // which we'll only reveal when the user scrolls past a certain position
-$('.menu').addClass('original').clone().insertAfter('.menu').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
+$('nav').addClass('original').clone().insertAfter('nav').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
 
 scrollIntervalID = setInterval(stickIt, 10);
 
