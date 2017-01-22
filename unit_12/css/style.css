@@ -73,6 +73,7 @@ nav {
  nav.cloned {
  	padding: 0;
  	opacity: .95;
+ 	height: 30px;
  }
 
 
@@ -112,6 +113,7 @@ label {
 	cursor: pointer;
 	color: #000;
 	display: block;
+	padding: 20px;
 	font-family: "Raleway"; 
 	font-size: 1.2em;
 	font-style: normal;
