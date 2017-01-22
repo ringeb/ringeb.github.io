@@ -1,6 +1,6 @@
 $(function(){
-  $('body').css('display', 'none');
-  $('body').fadeIn(3000);
+  $('#mainwrapper').css('display', 'none');
+  $('#mainwrapper').fadeIn(3000);
 });
 
 // create a clone of the menu, 
