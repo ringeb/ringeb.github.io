@@ -115,7 +115,7 @@ label {
 	display: block;
 	padding: 20px;
 	font-family: "Raleway"; 
-	font-size: 1.2em;
+	font-size: 2em;
 	font-style: normal;
 	line-height: 1.33em;
 	word-spacing: -0.1em;
@@ -294,6 +294,11 @@ div #mc_embed_signup_scroll {
 .logo {
 	margin: 3%;
 	width: 94%;
+}
+#logo-menu {
+	width: 150px;
+	margin-right: 20px;
+	display: inline;
 }
 .footerbar{
 	background-color: #000;
