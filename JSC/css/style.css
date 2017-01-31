@@ -359,3 +359,9 @@ h1{
 	width: 98%;
 	display: block;
 }
+#rudr_instafeed li{
+  width:95%;
+  height:95%;
+  margin:10px;
+  display: block;
+}
