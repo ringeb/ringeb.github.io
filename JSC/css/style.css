@@ -315,10 +315,10 @@ form {
   list-style:none  
 }
 #rudr_instafeed li{
-  float:left;
-  width:200px;
-  height:200px;
-  margin:10px
+  width:31%;
+  height:31%;
+  margin:10px;
+  display: inline-flex;
 }
 #rudr_instafeed li img{
   max-width:100%;

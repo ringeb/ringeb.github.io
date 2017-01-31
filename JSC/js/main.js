@@ -128,7 +128,7 @@ function getComments() {
 getComments();
 
 
-var token = 'd59212ed8c7c4504b59626af27fcc4be',
+var token = '402445702.d59212e.80b303912d3f42269f4b9c04e3b7ecdd',
     num_photos = 3;
  
 $.ajax({
