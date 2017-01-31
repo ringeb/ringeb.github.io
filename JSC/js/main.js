@@ -127,6 +127,7 @@ function getComments() {
 
 getComments();
 
+//instagram api
 
 var token = '402445702.d59212e.80b303912d3f42269f4b9c04e3b7ecdd',
     num_photos = 3;
@@ -139,7 +140,7 @@ $.ajax({
     success: function(data){
         console.log(data);
         for( x in data.data ){
-            $('ul').append('<li><img src="'+data.data[x].images.low_resolution.url+'"></li>');
+            $('#rudr_instafeed').append('<li><img src="'+data.data[x].images.low_resolution.url+'"></li>');
         }
     },
     error: function(data){
