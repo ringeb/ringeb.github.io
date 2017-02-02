@@ -7,7 +7,7 @@ $(function(){
 
 // create a clone of the menu, 
 // which we'll only reveal when the user scrolls past a certain position
-$('nav').addClass('original').clone().insertAfter('nav').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
+$('nav').addClass('original').children().clone().insertAfter('nav').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
 
 scrollIntervalID = setInterval(stickIt, 10);
 
