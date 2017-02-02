@@ -32,4 +32,6 @@ function stickIt() {
     $('.cloned').hide();
     $('.original').css('visibility','visible');
   }
+$('cloned').on(click, )
+
 }
