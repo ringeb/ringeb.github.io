@@ -460,32 +460,11 @@ div #mc_embed_signup_scroll {
   max-height:100%;
 }
 
-@media only screen and (max-width: 900px) {
-	
-	label{
-		font-size: 1.2em;
-	}
-	.overlay p {
-		display: none;
-	}
-	.col4 {
-	width:  45%;
-	}
-	.clearfix .thoughts {
-	max-height: 225px;
-	}
-	.clearfix .col4{
-	width: 32.33%;
-	}
-	#menu {
-		font-size: 1.2em;
-	}
-}
 
- @media only screen and (max-width:700px) {
+ @media only screen and (max-width:1000px) {
 
 body{
- font-size:18px;
+ font-size:25px;
 }
 h1 {
 	font-size: 1.5em;
