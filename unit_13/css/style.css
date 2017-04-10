@@ -242,6 +242,15 @@ div #mc_embed_signup_scroll {
 	padding: 10px;
     margin: 10px .5%;
 }
+.col8{
+    background-color: #fff;
+    padding-bottom: 10px;
+    position: relative;
+    float: left;
+    margin: 10px 0px;
+    padding: 40px 12%;
+    width: 100%;
+}
 
 .col1:hover{
 	box-shadow: -3px 3px 10px rgba(0,0,0,.25);
@@ -425,7 +434,7 @@ div #mc_embed_signup_scroll {
 
  #projectswrapper {
  	background-color: #fff;
- 	box-shadow: -1px 1px 3px #A7ABBA;
+ 	box-shadow: -1px 1px 3px #ededed;
  	margin: 0 auto 1%;
  	padding: 2.1%;
  	position: relative;
