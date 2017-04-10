@@ -116,7 +116,7 @@ label {
 	color: #000;
 	display: block;
 	font-family: "Raleway"; 
-	font-size: 2em;
+	font-size: 1em;
 	font-style: normal;
 	line-height: 1.33em;
 	word-spacing: -0.1em;
@@ -482,7 +482,7 @@ h2 {
 	width: 100%;
 	height: auto;
 }
-.col3 {
+ 	.col3 {
 	float: none;
 	width: 100%;
 }
@@ -541,3 +541,6 @@ h2 {
 	padding: 3%;
 }
 
+ @media only screen and (max-width:600px){
+
+ }
