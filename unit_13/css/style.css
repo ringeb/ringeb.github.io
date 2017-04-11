@@ -121,7 +121,9 @@ label {
 	line-height: 1.33em;
 	word-spacing: -0.1em;
 }
-
+ul {
+	  list-style-position: inside;
+}
 
 li {
 	font-family: "Raleway";
@@ -428,7 +430,7 @@ div #mc_embed_signup_scroll {
 }
 
 #subwrapper {
-	max-width: 1080px;
+	max-width: 980px;
 	margin: auto;
 }
 
