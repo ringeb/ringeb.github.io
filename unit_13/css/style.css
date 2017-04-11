@@ -274,12 +274,10 @@ div #mc_embed_signup_scroll {
 
 .homeimage { 
 	border-radius: 50%;
-    cursor: pointer;
     width: 95%;
     padding: 13px 0px 0px 13px;
  }
 .projectimage{
-    cursor: pointer;
     width: 95%;
     padding: 13px 0px 0px 13px;
   	-moz-filter: saturate(100%);
@@ -297,7 +295,6 @@ div #mc_embed_signup_scroll {
   	filter: saturate(105%);
 }
 .imagewrapper{
-    cursor: pointer;
     width: 98.5%;
     padding: 13px 0px 0px 13px;
   	-moz-filter: saturate(100%);
@@ -305,7 +302,6 @@ div #mc_embed_signup_scroll {
   	-o-filter: saturate(100%);
   	-ms-filter: saturate(100%);
   	filter: saturate(100%);
-}
 }
 
  .thoughts{
@@ -486,6 +482,9 @@ h2 {
 	font-size: 1em;
 	text-align: center;
 }
+.columntext {
+	padding: 5px 25px;
+}
 .col1 {
 	display: none;
 }
@@ -551,6 +550,7 @@ h2 {
 #thoughtswrapper{
 	padding: 3%;
 }
+
 
  @media only screen and (max-width:600px){
 
