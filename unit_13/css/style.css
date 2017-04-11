@@ -355,6 +355,12 @@ div #mc_embed_signup_scroll {
 .aboutwrapper .logo{
 	width: 30%;
 }
+.insight {
+	background-color: #fff;
+	float: left;
+    width: 33.3%;
+}
+
 #topsection {
 	padding: 30px;
 }
@@ -467,7 +473,15 @@ div #mc_embed_signup_scroll {
   max-width:100%;
   max-height:100%;
 }
-
+#insights{
+    background-color: #fff;
+    padding-bottom: 10px;
+    position: relative;
+    float: left;
+    margin: 10px 0px;
+    padding: 40px 12%;
+    width: 100%;
+}
 
  @media only screen and (max-width:1000px) {
 
@@ -492,7 +506,7 @@ h2 {
 	width: 100%;
 	height: auto;
 }
- 	.col3 {
+ .col3 {
 	float: none;
 	width: 100%;
 }
@@ -532,6 +546,9 @@ h2 {
 	width: 96%;
 	margin-bottom: 10px;
 }
+.insight{
+	width: 100%
+}
 #headerimage {
 	margin: auto;
 }
@@ -549,6 +566,10 @@ h2 {
 }
 #thoughtswrapper{
 	padding: 3%;
+}
+#insights{
+	margin: 0px 0px;
+    padding: 0;
 }
 
 
