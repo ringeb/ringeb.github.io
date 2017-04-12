@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Supper Club</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header class="clearfix">
+			<section>
+				<h1>Monthly Table</h1>
+				<img src="images/toms-restaurant.jpg" alt="RINGEB logo" title="logo" id="logo">
+				<h2>A Supper Club</h2>
+			</section>
+	</header>
+		<a href="#top" class="top">
+   			 <img src="images/up-arrow.png" alt="up arrow" title="up-arrow" />
+		</a>
+		<div class="clearfix" id="mainwrapper">
+			<div class="clearfix" id="subwrapper">
+				<section class="clearfix" id="projectswrapper">
+					<h3>About</h3>
+					<p> Monthly Table is a supper club project by Ryan Ingebritson that uses food as a way to bring people together. Each month the menu is set and diners come to participate in a theme.</p>
+				</section>
+				<section class="clearfix" id="projectswrapper">
+					<h3>Reservations</h3>
+						<figure class="clearfix" id="res">
+							<h4>Reserve Your Spot</h4>
+							<form id="reservation-form">
+						        <input type="text" id="reservation-name" placeholder="Jane Doe">
+						        <input type="text" id="reservation-email" placeholder="Email">
+						       <select type="select" id="reservation-month"> 
+						            <option><a>January - Italian</a></option>
+						            <option><a>February - Spanish</a></option>
+						            <option><a>March - French</a></option>
+						            <option><a>April - Thai</a></option>
+						            <option><a>May - Carribean</a></option>
+						            <option><a>June - Southern Barbecue</a></option>
+						            <option><a>July - Guest Chef</a></option>
+						            <option><a>August - Summer Harvest</a></option>
+						            <option><a>September - Persian</a></option>
+						            <option><a>October - Korean Street Food</a></option>
+						            <option><a>November - Soups and Sauces</a></option>
+						            <option><a>December - Jamaican Chinese</a></option>
+						          </select> 
+						    <input type="submit" value="Set Reservation">
+						    </form>
+						</figure>
+						<figure class="clearfix">
+							<h4>Existing Reservations</h4>
+							<ul class="reservations">
+							</ul>
+								<script id="reservation-template" type="text/x-handlebars-template">
+								  <li data-id="{{reservationId}}">
+								    <p>{{name}} - {{email}}</p>
+								    <p>{{month}}</p>
+								  </li>
+								</script>
+					</figure>
+				</section>	
+				<section class="clearfix" id="projectswrapper">
+					<h3>Join Us</h3>
+					 <div class="restaurant-locator">
+            				<div id="map" style="height: 400px"></div>
+     				 </div>
+				</section>	
+				<section class="clearfix" id="projectswrapper">	
+					<h3>Reviews</h3>
+					<figure class="clearfix" id="review">
+						<h4>Tell the world about your experience</h4>
+								<form id="comment-form">
+								    <input id="comment-name" type="name" placeholder="Name">
+								    <textarea id="comment" type="text" placeholder="Leave a comment" cols="40" rows="5"></textarea>
+								    <input type="submit" value="Submit">
+								</form>
+					</figure>
+					<figure id="review-section">
+						<h4>Diner Reviews</h4>
+						<ul class="comments">
+						</ul>
+						<script id="comment-template" type="text/x-handlebars-template">
+						  <li data-id="{{commentId}}">
+						    <p>{{name}} - "{{comment}}"</p>
+						  </li>
+						</script>
+					</figure>
+				</section>	
+				<section class="clearfix" id="projectswrapper">	
+					<h3>Photos</h3>
+					<ul id="rudr_instafeed"></ul>
+				</section>
+			</div>
+		</div>
+		<footer>
+		</footer>
+</body>
+	<!-- Type -->
+	<script src="https://use.typekit.net/nti7kpo.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<!-- Firebase CDN -->
+  	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+ 	 <script src="js/handlebars-v4.0.5.js"></script>
+ 	 <script src="js/jquery-3.0.0.js"></script>
+	 	 <!-- JavaScript -->
+	<script type="text/javascript" src="js/main.js"></script>
+	
+	<!-- Maps-->
+	<script  async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH4MfS9pkDfdhZRafMnA4YEDNXEao5SV4&callback=initMap"></script>
+	
+
+</html>

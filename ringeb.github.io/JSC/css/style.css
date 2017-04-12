@@ -1,0 +1,367 @@
+* {
+	border: 0;
+	box-sizing:border-box;
+	font-size: 100%;
+	font: inherit;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+body{
+	background-color: #FFF;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+header{
+	width: 100%
+	max-width: 1080px;
+}
+
+h1 { 
+	color: #000;
+	font-family: "Playfair Display",'Times New Roman', Times, Serif;
+	font-size: 5.4em;
+	font-weight: 100;
+	margin: auto;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+h2 {
+	color: #000;
+	font-family: "Raleway"; san-serif;
+	font-feature-settings: "'liga' 1";
+	font-size: 2em;
+	font-weight: 400;
+	letter-spacing: 0em;
+	line-height: 1.33em;
+	margin: auto;
+	padding: 15px;
+	text-align: center;
+	word-spacing: -0.1em;
+}
+
+h3 {
+	color: #000;
+	font-family: "Raleway";
+	font-size: 1.5em;
+	font-weight: 400;
+	letter-spacing: 0em;
+	line-height: 1em;
+	margin: auto;
+	padding: 1.5%;
+	text-align: center;
+	word-spacing: -0.1em;
+}
+h4 {
+	color: #000;
+	font-family: "Raleway";
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1em;
+	margin: auto;
+	padding: 1.5%;
+	text-align: center;
+	word-spacing: -0.1em;
+}
+p {
+	font-family: "Raleway";
+	font-size: .em;
+	padding: 5px 0px;
+	text-align: center;
+}
+
+nav { 
+	display: inline;
+	padding:10px;
+ }
+
+a:link{ 
+	color: #000;
+	text-decoration: none; 
+	}
+
+a:visited{  
+	color: #000;
+	text-decoration: none; 
+	}
+
+a:hover{ 
+	color: #FF5339;
+	text-decoration: none; 
+	}
+
+a:active { 
+	color: #FF5339;
+	text-decoration: none; 
+	}
+figure {
+	display: inline;
+}
+
+footer {
+	background-color: #fff;
+	color: #000;
+	font-size: 1em;
+	line-height: 1.33em;
+	padding: 15px;
+	text-align: center;
+	width: 100%;
+}
+img {
+	margin: auto;
+	width: 100%;
+	max-width: 1080px;
+    display: block;
+}
+
+label {
+	background-color: #fff;
+	cursor: pointer;
+	color: #000;
+	display: block;
+	font-family: "Raleway"; 
+	font-size: 1.2em;
+	font-style: normal;
+	line-height: 1.33em;
+	word-spacing: -0.1em;
+	margin-left: 5%;
+}
+
+li {
+	list-style-type: none;
+	margin: auto;
+	font-family: "Raleway";
+	font-size: .9em;
+	padding: 5px 0px;
+	text-align: center; 
+}
+select {
+  border-radius: 0px;
+  font-family: "Raleway"; 
+  font-size: 1em;
+  position: relative;
+  display: block;
+  width: 300px;
+  height: 33px;
+  margin: 30px auto;
+  padding: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: -1px 1px 3px #A7ABBA;
+  -webkit-appearance: none;
+}
+
+button {
+  font-family: "Raleway"; 
+  font-size: 1em;
+  position: relative;
+  display: block;
+  width: 300px;
+  margin: 30px auto;
+  padding: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: -1px 1px 3px #A7ABBA;
+}
+
+input {
+  font-family: "Raleway"; 
+  font-size: .8em;
+  position: relative;
+  display: block;
+  width: 300px;
+  margin: 30px auto;
+  padding: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: -1px 1px 3px #A7ABBA;
+}
+textarea {
+  font-family: "Raleway"; 
+  font-size: .8em;
+  position: relative;
+  display: block;
+  width: 300px;
+  margin: 30px auto;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: -1px 1px 3px #A7ABBA;
+}
+form {
+	margin: auto;
+}
+.top{
+    position: fixed;
+    z-index: 1;
+    width: 3em;
+    bottom: 550px;
+    right: 0;
+    opacity: 0.8;
+}
+
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+#mainwrapper {
+	margin: auto;
+	width: 100%;
+}
+
+#subwrapper {
+	max-width: 1080px;
+	margin: auto;
+}
+
+ #projectswrapper {
+ 	background-color: #fff;
+ 	box-shadow: -1px 1px 3px #A7ABBA;
+ 	margin: 0 auto 1%;
+ 	padding: 2.1%;
+ 	position: relative;
+ }
+ #menu-toggle {
+  display: block;
+}
+
+#reservation-month {
+  	background-color: #fff;
+	border-left: .5px solid #EFEFEF;
+	border-radius: 0px;
+	color: #000;
+	font-family: "Raleway"; 
+	font-feature-settings: "'liga' 1";
+	font-size: .85em;
+	font-style: normal;
+	line-height: 1em;
+	padding: 10px;
+}
+
+#menu-toggle:click + #menu {
+  display: block;
+}
+
+#submenu{
+	font-size: .9em;
+	line-height: .9em;
+	padding-left: 20px;
+}
+#menu-toggle:checked + #submenu {
+  display: block;
+}
+ #res {
+ 	box-shadow: -1px 1px 3px #A7ABBA;
+ 	float: left;
+ 	padding: 2%;
+ 	width: 48%;
+ }
+ #reservation-template {
+ 	box-shadow: -1px 1px 3px #A7ABBA;
+ 	float: left;
+ 	margin: 0 2%;
+ 	padding: 2%;
+ 	width: 48%;
+ }
+
+  #review {
+ 	box-shadow: -1px 1px 3px #A7ABBA;
+ 	float: left;
+ 	padding: 2%;
+ 	width: 48%;
+ }
+ .comments {
+ 	font-family: "Raleway"; 
+	font-feature-settings: "'liga' 1";
+	font-size: 1em;
+	font-style: normal;
+	line-height: 1em;
+	padding: 10px;
+	margin-left: 5%;
+ 	box-shadow: -1px 1px 3px #A7ABBA;
+ 	float: left;
+ 	margin: 0 2%;
+ 	padding: 2%;
+ 	width: 48%;
+ }
+ .reservations{
+ 	font-family: "Raleway"; 
+	font-feature-settings: "'liga' 1";
+	font-size: 1em;
+	font-style: normal;
+	line-height: 1em;
+	margin-left: 5%;
+ 	box-shadow: -1px 1px 3px #A7ABBA;
+ 	float: left;
+ 	margin: 0 2%;
+ 	padding: 2%;
+ 	width: 48%;
+ }
+
+#map {
+        height: 100%;
+ }
+#rudr_instafeed{
+  list-style:none  
+}
+#rudr_instafeed li{
+  width:31%;
+  height:31%;
+  margin:1%;
+  display: inline-flex;
+}
+#rudr_instafeed li img{
+  max-width:100%;
+  max-height:100%;
+}
+
+@media only screen and (max-width:700px) {
+
+body{
+ font-size:18px;
+}
+figure{
+	margin: 12px auto;
+}
+h1{
+	font-size: 2.6em;
+}
+.reservations {
+	width:98%;
+	display: block;
+	margin: 0 0%;
+}
+.comments {
+	width: 98%;
+	margin: 0 0%;
+}
+#res{
+	width: 98%;
+}
+#projectswrapper{
+	margin: 12px auto;
+}
+
+#review{
+	width:98%;
+}
+#review-section{
+	width: 98%;
+	display: block;
+}
+#rudr_instafeed li{
+  width:95%;
+  height:95%;
+  margin:10px;
+  display: block;
+}
