@@ -132,6 +132,11 @@ li {
 	list-style-type: circle;
 	padding: 5px; 
 }
+iframe {
+	margin: 0 auto;	
+	display: block;
+	transform: scale(.70);
+}
 
 div #mc_embed_signup_scroll {
 	background-color: #fff;
@@ -432,7 +437,7 @@ div #mc_embed_signup_scroll {
 }
 
 #subwrapper {
-	max-width: 980px;
+	max-width: 930px;
 	margin: auto;
 }
 
@@ -464,10 +469,10 @@ div #mc_embed_signup_scroll {
   list-style:none  
 }
 #rudr_instafeed li{
-  width:31%;
-  height:31%;
-  margin:10px;
-  display: inline-flex;
+    width: 31%;
+    height: 250px;
+    margin: 1%;
+    display: inline-flex;
 }
 #rudr_instafeed li img{
   max-width:100%;
