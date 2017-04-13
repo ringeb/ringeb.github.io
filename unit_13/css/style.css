@@ -7,6 +7,9 @@
 	padding: 0;
 	vertical-align: baseline;
 }
+*:focus {
+    outline: none;
+}
 
 body{
 	background-color: #FFF;
@@ -16,8 +19,11 @@ body{
 }
 header{
 	background-color: #fff;
-	box-shadow: -1px 1px 10px #A7ABBA;
+	border-style: solid;
+    border-bottom-width: 6px;
+    border color: #000
 	margin: 0px auto 15px;
+	margin-bottom: 50px;
 	padding: 20px;
 	width: 100%;
 }
@@ -101,25 +107,27 @@ a:active {
 
 footer {
 	background-color: #fff;
+	border-top: 6px;
+	border-style: solid;
+	border color: #000;
 	color: #000;
 	font-size: 1em;
 	line-height: 1.33em;
 	padding: 15px;
 	text-align: center;
 	width: 100%;
+	margin-top: 40px;
 }
 
 
 label {
-	background-color: #fff;
-	cursor: pointer;
-	color: #000;
-	display: block;
-	font-family: "Raleway"; 
-	font-size: 1em;
-	font-style: normal;
-	line-height: 1.33em;
-	word-spacing: -0.1em;
+    background-color: #fff;
+    cursor: pointer;
+    color: #000;
+    font-family: "Raleway";
+    font-size: 1.7em;
+    font-style: normal;
+    line-height: 0;
 }
 ul {
 	  list-style-position: inside;
@@ -150,6 +158,12 @@ div #mc_embed_signup_scroll {
 	word-spacing: -0.1em;
 	margin: none;
 } 
+textarea:focus, input:focus{
+    outline: none;
+}
+*:focus {
+    outline: none;
+}
 #mc_embed_signup_scroll label {
 	margin-left: 0px;
 }
@@ -185,6 +199,11 @@ div #mc_embed_signup_scroll {
 	font-family: "semplicitapro", helvetica, sans-serif;
 	font-size: .9em;
 	 }
+
+.menu{
+	padding: 15px 31px;
+    background: white;
+}
 
 .col1 {
 	background-color: #fff;
@@ -354,11 +373,6 @@ div #mc_embed_signup_scroll {
     margin: auto;
 }
 
-.footerbar{
-	background-color: #000;
-	height: 3px;
-	margin-top: 40px;
-}
 .aboutwrapper .logo{
 	width: 30%;
 }
@@ -367,7 +381,44 @@ div #mc_embed_signup_scroll {
 	float: left;
     width: 33.3%;
 }
+.onclick-menu {
+    position: relative;
+    display: inline-block;
+    font-size: 1.7em;
+}
+.onclick-menu:before {
+}
+.onclick-menu:focus {
+    /* clicking on label should toggle the menu */
+    pointer-events: none;
+}
+.onclick-menu:focus .onclick-menu-content {
+    /*  opacity is 1 in opened state (see below) */
+    opacity: 1;
+    visibility: visible;
 
+    /* don't let pointer-events affect descendant elements */
+    pointer-events: auto;
+}
+.onclick-menu-content {
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+	border-left: .5px solid #EFEFEF;
+	color: #000;
+	font-family: "Raleway"; 
+	font-size: .8em;
+	font-style: normal;
+	line-height: 1em;
+	padding: 10px;
+	margin-left: 5%;
+	width: 300px;
+
+    /* use opacity to fake immediate toggle */
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s;
+}
 #topsection {
 	padding: 30px;
 }
@@ -493,7 +544,7 @@ div #mc_embed_signup_scroll {
  @media only screen and (max-width:1000px) {
 
 body{
- font-size:25px;
+ font-size:22px;
 }
 h1 {
 	font-size: 1.5em;
@@ -503,6 +554,7 @@ h2 {
 	font-size: 1em;
 	text-align: center;
 }
+
 .columntext {
 	padding: 5px 25px;
 }
@@ -516,6 +568,7 @@ h2 {
  .col3 {
 	float: none;
 	width: 100%;
+	position: unset;
 }
 .col4 {
 	float: none;

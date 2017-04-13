@@ -22,3 +22,9 @@ $.ajax({
         console.log(data);
     }
 });
+
+hideMenu = function() {
+var div = document.getElementById('box1');
+div.style.display = 'none';
+
+}
