@@ -18,7 +18,7 @@ body{
 	padding: 0;
 }
 header{
-	background-color: #fff;
+	background: url('images/heather grey.jpg');
 	border-style: solid;
     border-bottom-width: 6px;
     border color: #000
@@ -106,14 +106,13 @@ a:active {
 	}
 
 footer {
-	background-color: #fff;
-	border-top: 6px;
+	background-color: #e0e0e0;
 	border-style: solid;
 	border color: #000;
 	color: #000;
 	font-size: 1em;
 	line-height: 1.33em;
-	padding: 15px;
+	padding: 15px 0px 0px;
 	text-align: center;
 	width: 100%;
 	margin-top: 40px;
@@ -137,7 +136,7 @@ li {
 	font-family: "Raleway";
 	font-size: .75em;
 	line-height: 1.33em;
-	list-style-type: circle;
+	list-style-type: none;
 	padding: 5px; 
 }
 iframe {
@@ -280,6 +279,30 @@ textarea:focus, input:focus{
     width: 100%;
 }
 
+.col2footer{
+	float: left;
+	margin: 10px .5%;
+    width: 32.4%;
+    text-align: right;
+}
+.col5footer{
+	float: left;
+	margin: 10px .5%;
+    width: 65.6%;
+    text-align: left;
+}
+.footer-copyright{
+	background-color: #000;
+	color: #fff;
+	text-align: left;
+	padding: 5px;
+}
+
+.footersubwrapper {	
+	padding: 5px;
+	max-width: 930px;
+	margin: auto;
+}
 .col1:hover{
 	box-shadow: -3px 3px 10px rgba(0,0,0,.25);
 	transform: rotate(-.2deg);
@@ -328,22 +351,6 @@ textarea:focus, input:focus{
   	-o-filter: saturate(100%);
   	-ms-filter: saturate(100%);
   	filter: saturate(100%);
-}
-
- .thoughts{
- 	background-color: gold;
- 	bottom-margin: 20px;
- 	box-shadow: -1px 1px 3px #A7ABBA;
- 	color: #000;
- 	font-size: 1em;
- 	height: 300px;
- 	padding: 20px;
- 	overflow: auto
- }
-
- .thoughts:hover {
-  	box-shadow: -3px 3px 10px rgba(0,0,0,.25);
-	transform: rotate(-.2deg);
 }
 
 .overlay{
@@ -541,7 +548,7 @@ textarea:focus, input:focus{
     width: 100%;
 }
 
- @media only screen and (max-width:1000px) {
+ @media only screen and (max-width:930px) {
 
 body{
  font-size:22px;
@@ -578,6 +585,10 @@ h2 {
     width: 100%;
     height: auto;
 }
+.footersubwrapper {	
+	padding: 5px 50px;
+}
+
 .clearfix .col4{
 	width: 100%;
 }
@@ -634,5 +645,17 @@ h2 {
 
 
  @media only screen and (max-width:600px){
-
+ .col2footer{
+	float: none;
+    width: 100%;
+    text-align: center;
+}
+.col5footer{
+	float: none;
+    width: 100%;
+    text-align: center;
+}
+.footer-copyright{
+	text-align: center;
+	}
  }
