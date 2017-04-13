@@ -83,6 +83,7 @@ nav {
 	width: 100%;
 	opacity: .95;
 	z-index: 100;
+	display: block;
  }
 
 a:link{ 
@@ -426,6 +427,20 @@ textarea:focus, input:focus{
     visibility: hidden;
     transition: visibility 0.5s;
 }
+.icon {
+	display: none;
+}
+
+.sidenav {
+	display: block;
+}
+.col-xs-3{
+	background-color: #fff;
+	width: 240px;
+	display: block;
+	margin: auto;
+}
+
 #topsection {
 	padding: 30px;
 }
@@ -547,7 +562,20 @@ textarea:focus, input:focus{
     padding: 40px 12%;
     width: 100%;
 }
-
+@media only screen and (max-width: 1300px){
+.sidenav {
+	display: inline;
+}
+.col-xs-3{
+	background-color: #fff;
+	width: 100%;
+	bottom: 0;
+	padding: 20px;
+	display: block;
+	margin: auto;
+	position: fixed;
+}
+}	
  @media only screen and (max-width:930px) {
 
 body{
@@ -577,6 +605,7 @@ h2 {
 	width: 100%;
 	position: unset;
 }
+
 .col4 {
 	float: none;
 	width: 100%;
