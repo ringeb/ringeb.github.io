@@ -460,9 +460,9 @@ textarea:focus, input:focus{
 	float: left;
 }
 #headertext {
-	padding: 100px 0px;
+	padding: 150px 0px;
 	text-align: center;
-    width: 51%;
+    width: 100%;
     margin: auto;
 }
 #logo {
