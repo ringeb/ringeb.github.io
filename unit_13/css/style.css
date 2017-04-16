@@ -18,9 +18,6 @@ body{
 	padding: 0;
 }
 header{
-	background: url('images/11.1.jpg');
-	background-size:cover;
-	-webkit-background-size:cover;
 	border-style: solid;
     border-bottom-width: 6px;
     border color: #000
@@ -461,9 +458,10 @@ textarea:focus, input:focus{
 	float: left;
 }
 #headertext {
-	float: left;
-	padding-top: 0px;
-    width: 66%;
+	padding: 100px;
+	text-align: center;
+    width: 51%;
+    margin: auto;
 }
 #logo {
 	margin: 3%;
@@ -507,8 +505,12 @@ textarea:focus, input:focus{
 
 
 #splash {
+	background: url('https://ringeb.github.io/unit_13/images/11.1.jpg');
+	background-size: cover;
+	-webkit-background-size:cover;
 	margin: auto;
-	max-width: 1080px;
+	max-width: 100%;
+	height: 100%;
 }
 
 #mainwrapper {
