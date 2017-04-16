@@ -201,7 +201,7 @@ textarea:focus, input:focus{
 	 }
 
 .menu{
-	padding: 15px 31px;
+	padding: 8px 31px;
     background: white;
 }
 
@@ -442,7 +442,7 @@ textarea:focus, input:focus{
 }
 
 #topsection {
-	padding: 30px;
+	padding: 25px;
 }
 #headerimage {
 	border-radius: 50%;
@@ -508,6 +508,14 @@ textarea:focus, input:focus{
 
 #splash {
 	background: url('https://ringeb.github.io/unit_13/images/11.1.jpg');
+	background-size: cover;
+	-webkit-background-size:cover;
+	margin: auto;
+	max-width: 100%;
+	height: 100%;
+}
+#splashsafe{
+	background: url('https://ringeb.github.io/unit_13/images/11.jpg');
 	background-size: cover;
 	-webkit-background-size:cover;
 	margin: auto;
