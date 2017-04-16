@@ -18,7 +18,9 @@ body{
 	padding: 0;
 }
 header{
-	background: url('images/heather grey.jpg');
+	background: url('images/11.1.jpg');
+	background-size:cover;
+	-webkit-background-size:cover;
 	border-style: solid;
     border-bottom-width: 6px;
     border color: #000
@@ -450,6 +452,9 @@ textarea:focus, input:focus{
 	max-width: 220px;
 	margin-left: 20%;
 }
+.try {
+	margin: auto;
+}
 #headerleft {
 	width: 33%;
 	display: block;
@@ -564,7 +569,7 @@ textarea:focus, input:focus{
 }
 @media only screen and (max-width: 1300px){
 .sidenav {
-	display: inline;
+	display: inline-block;
 }
 .col-xs-3{
 	background-color: #fff;
