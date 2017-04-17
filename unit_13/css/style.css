@@ -78,7 +78,7 @@ p {
 }
 
 nav { 
-	padding: 0 30px;
+	background-color: #fff;
 	position: fixed;
 	width: 100%;
 	opacity: .95;
@@ -436,9 +436,10 @@ textarea:focus, input:focus{
 }
 .col-xs-3{
 	background-color: #fff;
-	width: 240px;
+	width: 522px;
 	display: block;
 	margin: auto;
+	bottom: 0;
 }
 
 #topsection {
@@ -449,9 +450,6 @@ textarea:focus, input:focus{
 	display: block;
 	max-width: 220px;
 	margin-left: 20%;
-}
-.try {
-	margin: auto;
 }
 #headerleft {
 	width: 33%;
@@ -580,17 +578,14 @@ textarea:focus, input:focus{
     width: 100%;
 }
 @media only screen and (max-width: 1300px){
-.sidenav {
-	display: inline-block;
-}
+
 .col-xs-3{
 	background-color: #fff;
-	width: 100%;
-	bottom: 0;
-	padding: 20px;
+	width: 522px;
 	display: block;
 	margin: auto;
-	position: fixed;
+	bottom: 0;
+	padding: 7px;
 }
 }	
  @media only screen and (max-width:850px) {

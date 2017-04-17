@@ -28,20 +28,38 @@ var div = document.getElementById('box1');
 div.style.display = 'none';
 
 }
+$('nav a:first').addClass('activeNav');
 
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      $(".anchor-link").removeClass("active");
-      $(this, ".anchor-link").addClass("active");
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
+$("nav a").on('click', function(event) {
+  $(".activeNav").removeClass("activeNav");
+  $(this).addClass("activeNav");
+  
+  event.preventDefault();
+  var hash = this.hash;
+  
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top
+  }, 800, function(){  
+    
+  window.location.hash = hash;
+  });
+});
+// Scrolling activates nav buttons
+$(window).scroll(function() {
+  //get position of scrollbar 
+  var windscroll = $(window).scrollTop();
+  // iterate to check each '.page' element
+  $('.page').each(function(i) {
+    // check if the page element's scroll position is < current pos
+    if ($(this).position().top <= windscroll + $(".page").height()/2) {
+      // if so switch the active nav link 
+      $('a.activeNav').removeClass('activeNav');
+      $('a').eq(i).addClass('activeNav');
     }
   });
+
+}).scroll();
+
+$("button").click(function(){
+  $(".thanksMsg").css("visibility","visible");
 });
