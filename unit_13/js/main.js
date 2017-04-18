@@ -28,9 +28,9 @@ var div = document.getElementById('box1');
 div.style.display = 'none';
 
 }
-$('nav a:first').addClass('activeNav');
+$('aside a:first').addClass('activeNav');
 
-$("nav a").on('click', function(event) {
+$("aside a").on('click', function(event) {
   $(".activeNav").removeClass("activeNav");
   $(this).addClass("activeNav");
   
@@ -59,7 +59,3 @@ $(window).scroll(function() {
   });
 
 }).scroll();
-
-$("button").click(function(){
-  $(".thanksMsg").css("visibility","visible");
-});
