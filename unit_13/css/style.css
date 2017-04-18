@@ -172,34 +172,7 @@ textarea:focus, input:focus{
 *:focus {
     outline: none;
 }
-#mc_embed_signup_scroll label {
-	margin-left: 0px;
-}
 
-#mc_embed_signup .button {
- 	border: none;
-    background: #000;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    letter-spacing: .03em;
-    color: #fff;
-    line-height: 32px;
-    padding: 0px 18px;
-    display: inline-block;
-    margin: 10px;
-    transition: all 0.23s ease-in-out 0s;
-    }
-
-#mc_embed_signup input.email {
-    border: 1px solid #ABB0B2;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    height: 32px;
-    margin: 10px 0px;
-    width: 350px;
-   }
 .red {
 	color: #FF5339;
 }
@@ -377,16 +350,15 @@ textarea:focus, input:focus{
 .responsive {
 	display: none;
 }
+.navicon {
+	width: 1.5em; 
+	margin: 5px 20px;
+	display: none;
+}
 
 .brandlogo{
 	margin-top: 10px;
 	width: 1em;
-}
-.responsiveimage{
-    display: none;
-    cursor: pointer;
-    width: 100%;
-    margin: auto;
 }
 
 .aboutwrapper .logo{
@@ -444,10 +416,17 @@ textarea:focus, input:focus{
 }
 .col-xs-3{
 	background-color: #fff;
-	width: 522px;
+	width: 100%;
 	display: block;
 	margin: auto;
 	bottom: 0;
+	text-align: center;
+}
+.sideBar {
+	display: inline;
+	margin: 0px 15px;
+	font-family: "Raleway";
+	font-size: 1.5em;
 }
 
 #topsection {
@@ -587,14 +566,7 @@ textarea:focus, input:focus{
 }
 @media only screen and (max-width: 1300px){
 
-.col-xs-3{
-	background-color: #fff;
-	width: 522px;
-	display: block;
-	margin: auto;
-	bottom: 0;
-	padding: 7px;
-}
+
 }	
  @media only screen and (max-width:850px) {
 
@@ -634,8 +606,12 @@ h2 {
     width: 100%;
     height: auto;
 }
+
 .footersubwrapper {	
 	padding: 5px 50px;
+}
+.sideBar {
+	font-size: 1em;
 }
 
 .clearfix .col4{
@@ -694,6 +670,12 @@ h2 {
 
 
  @media only screen and (max-width:600px){
+ .navicon {
+	display: inline;
+}
+.sideBar {
+	display: none;
+}
  .col2footer{
 	float: none;
     width: 100%;
