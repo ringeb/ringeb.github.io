@@ -166,6 +166,7 @@ div #mc_embed_signup_scroll {
 	word-spacing: -0.1em;
 	margin: none;
 } 
+
 textarea:focus, input:focus{
     outline: none;
 }
@@ -352,7 +353,7 @@ textarea:focus, input:focus{
 }
 .navicon {
 	width: 1.5em; 
-	margin: 5px 20px;
+	margin: 5px 15px;
 	display: none;
 }
 
@@ -670,6 +671,7 @@ h2 {
 
 
  @media only screen and (max-width:600px){
+
  .navicon {
 	display: inline;
 }
