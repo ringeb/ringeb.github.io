@@ -560,7 +560,7 @@ textarea:focus, input:focus{
 }
 
  #projectswrapper {
- 	background-color: #fff;
+ 	background-color: #fcfcfc;
  	box-shadow: -1px 1px 3px #ededed;
  	margin: 0 auto 1%;
  	padding: 2.1%;
