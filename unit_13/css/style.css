@@ -133,9 +133,20 @@ label {
     cursor: pointer;
     color: #000;
     font-family: "Raleway";
-    font-size: 1.7em;
+    font-size: 1.4em;
     font-style: normal;
     line-height: 0;
+}
+textarea {
+    font-family: "Raleway";
+    font-size: .8em;
+    position: relative;
+    display: block;
+    width: 300px;
+    margin: 10px auto;
+    padding: 10px 10px 110px;
+    cursor: pointer;
+    box-shadow: -1px 1px 3px #EFEFEF;
 }
 ul {
 	  list-style-position: inside;
@@ -166,6 +177,17 @@ div #mc_embed_signup_scroll {
 	word-spacing: -0.1em;
 	margin: none;
 } 
+input {
+	font-family: "Raleway";
+    font-size: .8em;
+    position: relative;
+    display: block;
+    width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: -1px 1px 3px #EFEFEF;
+}
 
 textarea:focus, input:focus{
     outline: none;
@@ -343,7 +365,7 @@ textarea:focus, input:focus{
 
 }
 .columntext {
-	padding: 10px 25px;
+	padding: 25px 25px;
 	position: relative;
 	margin-bottom: 3%
 }
@@ -477,6 +499,9 @@ textarea:focus, input:focus{
 	padding: 10px;
 	margin-left: 5%;
 }
+.hide {
+	display: block;
+}
 
 #menu-toggle:checked + #menu {
   display: block;
@@ -565,6 +590,9 @@ textarea:focus, input:focus{
     padding: 40px 12%;
     width: 100%;
 }
+#submit {
+	background-color: #eff6fa;
+}
 @media only screen and (max-width: 1300px){
 
 
@@ -581,6 +609,9 @@ h1 {
 h2 {
 	font-size: 1em;
 	text-align: center;
+}
+.hide{
+	display: none;
 }
 
 .columntext {
