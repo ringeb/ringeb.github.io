@@ -28,18 +28,18 @@ var div = document.getElementById('box1');
 div.style.display = 'none';
 
 }
-$('aside a:first').addClass('activeNav');
+$('aside a:first').addClass('activeAside');
 
 $("aside a").on('click', function(event) {
-  $(".activeNav").removeClass("activeNav");
-  $(this).addClass("activeNav");
+  $(".activeAside").removeClass("activeAside");
+  $(this).addClass("activeAside");
   
   event.preventDefault();
   var hash = this.hash;
   
   $('html, body').animate({
     scrollTop: $(hash).offset().top
-  }, 800, function(){  
+  }, 1500, function(){  
     
   window.location.hash = hash;
   });
@@ -53,9 +53,13 @@ $(window).scroll(function() {
     // check if the page element's scroll position is < current pos
     if ($(this).position().top <= windscroll + $(".page").height()/2) {
       // if so switch the active nav link 
-      $('a.activeNav').removeClass('activeNav');
-      $('a').eq(i).addClass('activeNav');
+      $('a.activeAside').removeClass('activeAside');
+      $('a').eq(i).addClass('activeAside');
     }
   });
 
+
 }).scroll();
+
+
+
