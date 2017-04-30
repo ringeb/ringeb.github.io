@@ -1,3 +1,9 @@
+
+<?php
+if($_POST["message"]) {
+    mail("ryan.ingebirston@gmail.com", "Form to email message", $_POST["message"], "From: hello@ringeb.com");
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -140,15 +146,15 @@
 							<figure class="col4">
 								<div class="columntext">
 									<h4 class="form">Contact me</h4>
-									<form id="reservation-form">
+									<form id="reservation-form" method="post" action="contact.php">
 										<p class="form">Name</p>
-								        <input type="text" id="reservation-name" placeholder="Jane Doe">
+								        <input type="text" id="reservation-name" name="name" placeholder="Jane Doe">
 								        <p class="form">Email address</p>
-								        <input type="text" id="reservation-email" placeholder="Email">
+								        <input type="text" id="reservation-email" name="email" placeholder="Email">
 								        <p class="form">Subject</p>
-								        <input type="text" id="reservation-email" placeholder="Subject">
+								        <input type="text" id="reservation-email" name="subject" placeholder="Subject">
 								        <p class="form">Leave me a message</p>
-								        <textarea type="text" placeholder="Messages and thoughts"></textarea>
+								        <textarea type="text" name="message" placeholder="Messages and thoughts"></textarea>
 								        <input type="submit" id="submit" name="Submit">
 								    </form>
 							    </div>
