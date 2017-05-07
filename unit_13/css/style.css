@@ -156,7 +156,6 @@ li {
 	font-family: "Raleway";
 	font-size: .75em;
 	line-height: 1.33em;
-	list-style-type: none;
 	padding: 5px; 
 }
 iframe {
@@ -235,7 +234,7 @@ textarea:focus, input:focus{
 
 .col3 {
 	background-color: #fff;
-	box-shadow: -1px 1px 3px #A7ABBA;
+	box-shadow: -1px 1px 3px #b3b3b3;
 	padding-bottom: 10px;
 	position: relative;
 	float: left;
@@ -255,8 +254,8 @@ textarea:focus, input:focus{
 
 .col5 {
 	background-color: #fff;
-	box-shadow: -1px 1px 3px #A7ABBA;
-	padding-bottom: 10px;
+	box-shadow: -1px 1px 3px #b3b3b3;
+	padding: 0px 20px;
 	position: relative;
 	float: left;
 	height: 410px;
@@ -265,7 +264,7 @@ textarea:focus, input:focus{
 }
 .col6 {
 	background-color: #fff;
-	box-shadow: -1px 1px 3px #A7ABBA;
+	box-shadow: -1px 1px 3px #b3b3b3;
 	padding-bottom: 10px;
 	position: relative;
 	float: left;
@@ -275,12 +274,11 @@ textarea:focus, input:focus{
 }
 .col7 {
 	background-color: #fff;
-	box-shadow: -1px 1px 3px #A7ABBA;
+	box-shadow: -1px 1px 3px #b3b3b3;
 	padding: 10px;
     margin: 10px .5%;
 }
 .col8{
-    background-color: #fff;
     padding-bottom: 10px;
     position: relative;
     float: left;
@@ -359,7 +357,7 @@ textarea:focus, input:focus{
 }
 .imagewrapper{
     width: 98.5%;
-    padding: 13px 0px 0px 13px;
+    padding: 20px 0px;
   	-moz-filter: saturate(100%);
   	-webkit-filter: saturate(100%);
   	-o-filter: saturate(100%);
@@ -426,6 +424,7 @@ textarea:focus, input:focus{
     background-color: #fff;
 	border-left: .5px solid #EFEFEF;
 	color: #000;
+	list-style-type: none;
 	font-family: "Raleway"; 
 	font-size: .8em;
 	font-style: normal;
@@ -526,6 +525,7 @@ textarea:focus, input:focus{
 #submenu{
 	font-size: .9em;
 	line-height: .9em;
+	list-style-type: none;
 	padding-left: 20px;
 }
 #menu-toggle:checked + #submenu {
@@ -561,29 +561,13 @@ textarea:focus, input:focus{
 }
 
  #projectswrapper {
- 	background-color: #fcfcfc;
- 	box-shadow: -1px 1px 3px #ededed;
+ 	background-color: #fff;
+ 	box-shadow: -1px 1px 3px #efefef;
  	margin: 0 auto 1%;
  	padding: 2.1%;
  	position: relative;
  }
 
-#researchwrapper {
- 	background-color: #fff;
- 	box-shadow: -1px 1px 3px #A7ABBA;
- 	margin: 0 auto 1%;
- 	padding: 2.1%;
- 	position: relative;
- 	clear: both;
- }
-
- #thoughtswrapper{
- 	background-color: #fff;
- 	box-shadow: -1px 1px 3px #A7ABBA;
- 	margin: 0 auto 1%;
- 	padding: 2.1%;
- 	position: relative;
- }
  #rudr_instafeed{
   list-style:none  
 }
