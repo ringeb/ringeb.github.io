@@ -332,7 +332,10 @@ textarea:focus, input:focus{
 .aside{
   	width: 100%;
   	}
-
+.bold {
+	font-size: .8em;
+	font-weight: 900;
+}
 .homeimage { 
 	border-radius: 50%;
     width: 95%;
@@ -391,7 +394,7 @@ textarea:focus, input:focus{
 	width: 1em;
 }
 .indent {
-	list-style-position: initial;
+	list-style-position: outside;
 }
 .aboutwrapper .logo{
 	width: 30%;
