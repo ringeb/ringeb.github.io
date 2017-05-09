@@ -390,7 +390,9 @@ textarea:focus, input:focus{
 	margin: 10px 5px;
 	width: 1em;
 }
-
+.indent {
+	list-style-position: initial;
+}
 .aboutwrapper .logo{
 	width: 30%;
 }
