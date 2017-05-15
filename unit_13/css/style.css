@@ -210,7 +210,7 @@ textarea:focus, input:focus{
 
 .col1 {
 	background-color: #fff;
-	box-shadow: -1px 1px 3px #f0f0f0;
+	box-shadow: -1px 1px 3px #A7ABBA;
 	display: inline-block;
 	float: left;
 	margin: .5%;
@@ -221,7 +221,7 @@ textarea:focus, input:focus{
 
 .col2 {
 	background-color: #fff;
-	box-shadow: -1px 1px 3px #f0f0f0;
+	box-shadow: -1px 1px 3px #A7ABBA;
 	display: inline-block;
 	float: left;
 	margin: 10px .5%;
@@ -233,7 +233,7 @@ textarea:focus, input:focus{
 
 .col3 {
 	background-color: #fff;
-	box-shadow: -1px 1px 3px #f0f0f0;
+	box-shadow: -1px 1px 3px #b3b3b3;
 	padding-bottom: 10px;
 	position: relative;
 	float: left;
@@ -253,7 +253,7 @@ textarea:focus, input:focus{
 
 .col5 {
 	background-color: #fff;
-	box-shadow: -1px 1px 3px #f0f0f0;
+	box-shadow: -1px 1px 3px #b3b3b3;
 	padding: 0px 20px;
 	position: relative;
 	float: left;
@@ -263,7 +263,7 @@ textarea:focus, input:focus{
 }
 .col6 {
 	background-color: #fff;
-	box-shadow: -1px 1px 3px #f0f0f0;
+	box-shadow: -1px 1px 3px #b3b3b3;
 	padding-bottom: 10px;
 	position: relative;
 	float: left;
@@ -273,7 +273,7 @@ textarea:focus, input:focus{
 }
 .col7 {
 	background-color: #fff;
-	box-shadow: -1px 1px 3px #f0f0f0;
+	box-shadow: -1px 1px 3px #b3b3b3;
 	padding: 10px;
     margin: 10px .5%;
 }
@@ -287,20 +287,12 @@ textarea:focus, input:focus{
 }
 .col9 {
 	background-color: #fff;
-	box-shadow: -1px 1px 3px #f0f0f0;
+	box-shadow: -1px 1px 3px #A7ABBA;
 	padding-bottom: 10px;
 	position: relative;
 	float: left;
 	margin: 10px 0px;
 	width: 100%;
-}
-.col10 {
-	background-color: #fff;
-	padding-bottom: 10px;
-	position: relative;
-	float: left;
-	margin: 10px 0px;
-	width: 50%;
 }
 
 .col2footer{
@@ -574,8 +566,9 @@ textarea:focus, input:focus{
 
  #projectswrapper {
  	background-color: #fff;
+ 	box-shadow: -1px 1px 3px #efefef;
  	margin: 0 auto 1%;
- 	padding: 1px 2.1%;
+ 	padding: 2.1%;
  	position: relative;
  }
 
