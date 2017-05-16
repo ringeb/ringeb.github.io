@@ -647,6 +647,9 @@ h2 {
     height: auto;
     box-shadow: none;
 }
+.col10 {
+	width: 100%;
+}
 
 .footersubwrapper {	
 	padding: 5px 50px;
