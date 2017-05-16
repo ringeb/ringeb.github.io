@@ -604,10 +604,7 @@ textarea:focus, input:focus{
 	background-color: #b73000;
 	color: #fff;
 }
-@media only screen and (max-width: 1300px){
-
-
-}	
+	
  @media only screen and (max-width:850px) {
 
 body{
@@ -634,11 +631,10 @@ h2 {
 .col2 {
 	width: 100%;
 	height: auto;
+	box-shadow: none;
 }
- .col3 {
-	float: none;
-	width: 100%;
-	position: unset;
+.col3 {
+	box-shadow: none;
 }
 
 .col4 {
@@ -649,6 +645,7 @@ h2 {
 .col5 {
     width: 100%;
     height: auto;
+    box-shadow: none;
 }
 
 .footersubwrapper {	
@@ -715,6 +712,9 @@ h2 {
 
  @media only screen and (max-width:600px){
 
+input{
+	float: none;
+}
  .navicon {
 	display: inline;
 }
@@ -725,6 +725,11 @@ h2 {
 	float: none;
     width: 100%;
     text-align: center;
+}
+ .col3 {
+	float: none;
+	width: 100%;
+	position: unset;
 }
 .col5footer{
 	float: none;
