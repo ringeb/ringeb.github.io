@@ -114,6 +114,7 @@ a:active {
 	text-decoration: none; 
 	}
 
+
 footer {
 	background-color: #eff6fa;
 	border-style: solid;
@@ -362,6 +363,7 @@ textarea:focus, input:focus{
   	-ms-filter: saturate(105%);
   	filter: saturate(105%);
 }
+
 .imagewrapper{
     width: 98.5%;
     padding: 20px 0px;
@@ -571,7 +573,6 @@ textarea:focus, input:focus{
 
  #projectswrapper {
  	background-color: #fff;
- 	box-shadow: -1px 1px 3px #efefef;
  	margin: 0 auto 1%;
  	padding: 2.1%;
  	position: relative;
@@ -743,3 +744,83 @@ input{
 	float: none;
 }
 }
+
+/*
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+}
+
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 300px;
+}
+
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+}
+
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+*/
